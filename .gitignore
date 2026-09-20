@@ -1,0 +1,11 @@
+# Ignorar las carpetas gigantes de instalacion
+**/node_modules/
+/frontend/dist/
+
+# Ignorar archivos con contrasenias y credenciales
+**/.env
+**/.env.local
+
+# Archivos sueltos del sistema operativo
+.DS_Store
+Thumbs.db
