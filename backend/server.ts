@@ -27,11 +27,14 @@ app.get("/api/prueba", (req: Request, res: Response) => {
   res.json({ message: "Hello from Express con TypeScript y TSX!" });
 });
 
-app.post("/api/users/login", 
-  rateLimiterMiddleware(5,60 * 1000), 
-  validateBodyMiddleware(["email", "password"]), (req, res) => {
-  res.json({ message: "Login exitoso", token: "jwt_simulado_123" });
-});
+app.post(
+  "/api/users/login",
+  rateLimiterMiddleware(5, 60 * 1000),
+  validateBodyMiddleware(["email", "password"]),
+  (req, res) => {
+    res.json({ message: "Login exitoso", token: "jwt_simulado_123" });
+  },
+);
 
 app.post(
   "/api/users/register",
