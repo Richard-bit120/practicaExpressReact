@@ -135,3 +135,17 @@ AggregateError [ECONNREFUSED]:
 2026-10-23 12:13:17 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
 2026-10-23 12:17:41 [INFO]: ✅ Conexión a MySQL establecida correctamente.
 2026-10-23 12:17:41 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 14:10:34 [ERROR]: ❌ Error fatal al iniciar el servidor:
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7)
+2026-10-23 14:11:18 [ERROR]: ❌ Error fatal al iniciar el servidor:
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1139:18)
+    at afterConnectMultiple (node:net:1714:7)
+2026-10-23 14:11:38 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 14:11:38 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 14:12:04 [INFO]: Conexión a BD establecida para script de admin.
+2026-10-23 14:12:04 [INFO]: El administrador 'admin' ya existe. No se sobrescribirá.
+2026-10-23 14:12:13 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 14:12:13 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
