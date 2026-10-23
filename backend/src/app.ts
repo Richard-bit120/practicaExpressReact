@@ -6,6 +6,8 @@ import { errorMiddleware } from "./shared/middlewares/error.middleware";
 import { notFoundMiddleware } from "./shared/middlewares/not-found.middleware";
 import { logger } from "./shared/logging/logger";
 import authRoutes from "./modules/auth/auth.routes";
+import authorsRoutes from './modules/authors/authors.routes';
+import { authMiddleware } from './shared/middlewares/auth.middleware';
 
 const app = express();
 
@@ -24,8 +26,11 @@ app.use(
 // Healthcheck
 app.get("/health", (req, res) => res.status(200).json({ status: "OK" }));
 
-// Rutas de Autenticación
-app.use("/api/auth", authRoutes);
+// Rutas públicas
+app.use('/api/auth', authRoutes);
+
+// Rutas protegidas
+app.use('/api/authors', authMiddleware, authorsRoutes);
 
 // Aquí montaremos las rutas protegidas en la Etapa 4
 // app.use('/api/books', authMiddleware, booksRoutes);
