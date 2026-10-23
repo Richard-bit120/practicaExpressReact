@@ -11,20 +11,20 @@ import { Book } from "../books/book.entity";
 @Entity("authors")
 export class Author {
   @PrimaryGeneratedColumn()
-  id: number;
+  id!: number;
 
-  @Column({ length: 150 })
-  name: string;
+  @Column({ type: "varchar", length: 150 })
+  name!: string;
 
   @Column({ type: "text", nullable: true })
-  biography: string | null;
+  biography!: string | null;
 
   @OneToMany(() => Book, (book) => book.author)
-  books: Book[];
+  books!: Book[];
 
   @CreateDateColumn()
-  createdAt: Date;
+  createdAt!: Date;
 
   @UpdateDateColumn()
-  updatedAt: Date;
+  updatedAt!: Date;
 }
