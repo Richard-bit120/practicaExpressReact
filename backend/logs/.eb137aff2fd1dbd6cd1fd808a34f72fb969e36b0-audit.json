@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\TSDS\\PRACTICAexpressReact\\practicaExpressReact\\backend\\logs\\.eb137aff2fd1dbd6cd1fd808a34f72fb969e36b0-audit.json",
+    "files": [
+        {
+            "date": 1792715654261,
+            "name": "D:\\TSDS\\PRACTICAexpressReact\\practicaExpressReact\\backend\\logs\\app-2026-10-22.log",
+            "hash": "80e4a9c60aaa8f4a520ba4289b3f98e0be1d8bc3df2dffaa6fcbc08d37410383"
+        }
+    ],
+    "hashType": "sha256"
+}
