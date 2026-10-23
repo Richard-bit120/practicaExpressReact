@@ -30,3 +30,108 @@
 2026-10-23 09:01:14 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:01:14 +0000] "POST /api/auth/login HTTP/1.1" 200 211 "-" "insomnia/13.3.1"
 2026-10-23 09:01:29 [WARN]: [Operational Error] GET /api/authors - Ruta no encontrada: /api/authors
 2026-10-23 09:01:29 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:01:29 +0000] "GET /api/authors HTTP/1.1" 404 63 "-" "insomnia/13.3.1"
+2026-10-23 09:33:36 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 09:33:36 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 09:33:47 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:33:47 +0000] "GET /api/authors HTTP/1.1" 200 65 "-" "insomnia/13.3.1"
+2026-10-23 09:35:43 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:35:43 +0000] "GET /api/authors HTTP/1.1" 200 65 "-" "insomnia/13.3.1"
+2026-10-23 09:35:48 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:35:48 +0000] "GET /api/authors HTTP/1.1" 200 65 "-" "insomnia/13.3.1"
+2026-10-23 09:36:07 [INFO]: Autor creado: ID=1, Nombre='Gabriel García Márquez'
+2026-10-23 09:36:07 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:36:07 +0000] "POST /api/authors HTTP/1.1" 201 203 "-" "insomnia/13.3.1"
+2026-10-23 09:37:53 [ERROR]: [Unexpected Error] GET /api/authors/1 - String-array "relations" syntax has been removed. Use object syntax instead, e.g. relations: { profile: true, posts: true }. See the v1 migration guide for details.
+TypeORMError: String-array "relations" syntax has been removed. Use object syntax instead, e.g. relations: { profile: true, posts: true }. See the v1 migration guide for details.
+    at FindOptionsUtils.rejectStringArrayRelations (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\find-options\FindOptionsUtils.ts:74:19)
+    at SelectQueryBuilder.setFindOptions (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\query-builder\SelectQueryBuilder.ts:107:26)
+    at EntityManager.findOne (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\entity-manager\EntityManager.ts:1325:14)
+    at Repository.findOne (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\repository\Repository.ts:680:29)
+    at AuthorsService.findById (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\modules\authors\authors.service.ts:60:48)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\modules\authors\authors.controller.ts:25:46)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\shared\utils\async-handler.ts:5:21)
+    at Layer.handle [as handle_request] (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\node_modules\express\lib\router\route.js:149:13)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\shared\middlewares\validation.middleware.ts:14:7)
+2026-10-23 09:37:53 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:37:53 +0000] "GET /api/authors/1 HTTP/1.1" 500 92 "-" "insomnia/13.3.1"
+2026-10-23 09:38:02 [ERROR]: [Unexpected Error] GET /api/authors/1 - String-array "relations" syntax has been removed. Use object syntax instead, e.g. relations: { profile: true, posts: true }. See the v1 migration guide for details.
+TypeORMError: String-array "relations" syntax has been removed. Use object syntax instead, e.g. relations: { profile: true, posts: true }. See the v1 migration guide for details.
+    at FindOptionsUtils.rejectStringArrayRelations (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\find-options\FindOptionsUtils.ts:74:19)
+    at SelectQueryBuilder.setFindOptions (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\query-builder\SelectQueryBuilder.ts:107:26)
+    at EntityManager.findOne (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\entity-manager\EntityManager.ts:1325:14)
+    at Repository.findOne (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\repository\Repository.ts:680:29)
+    at AuthorsService.findById (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\modules\authors\authors.service.ts:60:48)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\modules\authors\authors.controller.ts:25:46)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\shared\utils\async-handler.ts:5:21)
+    at Layer.handle [as handle_request] (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\node_modules\express\lib\router\route.js:149:13)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\shared\middlewares\validation.middleware.ts:14:7)
+2026-10-23 09:38:02 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:38:02 +0000] "GET /api/authors/1 HTTP/1.1" 500 92 "-" "insomnia/13.3.1"
+2026-10-23 09:38:03 [ERROR]: [Unexpected Error] GET /api/authors/1 - String-array "relations" syntax has been removed. Use object syntax instead, e.g. relations: { profile: true, posts: true }. See the v1 migration guide for details.
+TypeORMError: String-array "relations" syntax has been removed. Use object syntax instead, e.g. relations: { profile: true, posts: true }. See the v1 migration guide for details.
+    at FindOptionsUtils.rejectStringArrayRelations (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\find-options\FindOptionsUtils.ts:74:19)
+    at SelectQueryBuilder.setFindOptions (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\query-builder\SelectQueryBuilder.ts:107:26)
+    at EntityManager.findOne (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\entity-manager\EntityManager.ts:1325:14)
+    at Repository.findOne (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\repository\Repository.ts:680:29)
+    at AuthorsService.findById (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\modules\authors\authors.service.ts:60:48)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\modules\authors\authors.controller.ts:25:46)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\shared\utils\async-handler.ts:5:21)
+    at Layer.handle [as handle_request] (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\node_modules\express\lib\router\route.js:149:13)
+    at <anonymous> (D:\TSDS\PROGRAMACION2 BACKyFRONT\practicaExpressReact\practicaExpressReact\backend\src\shared\middlewares\validation.middleware.ts:14:7)
+2026-10-23 09:38:03 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:38:03 +0000] "GET /api/authors/1 HTTP/1.1" 500 92 "-" "insomnia/13.3.1"
+2026-10-23 09:43:45 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 09:43:45 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 09:44:31 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 09:44:31 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 09:44:52 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:44:52 +0000] "GET /api/authors/1 HTTP/1.1" 200 214 "-" "insomnia/13.3.1"
+2026-10-23 09:53:15 [INFO]: Autor eliminado: ID=1, Nombre='Gabriel García Márquez'
+2026-10-23 09:53:15 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:53:15 +0000] "DELETE /api/authors/1 HTTP/1.1" 204 - "-" "insomnia/13.3.1"
+2026-10-23 09:54:35 [WARN]: [Operational Error] GET /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-23 09:54:35 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:54:35 +0000] "GET /api/authors/1 HTTP/1.1" 404 59 "-" "insomnia/13.3.1"
+2026-10-23 09:55:33 [INFO]: Autor creado: ID=2, Nombre='Gabriel García Márquez'
+2026-10-23 09:55:33 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:55:33 +0000] "POST /api/authors HTTP/1.1" 201 203 "-" "insomnia/13.3.1"
+2026-10-23 09:56:46 [WARN]: [Operational Error] PATCH /api/authors/1 - Ruta no encontrada: /api/authors/1
+2026-10-23 09:56:46 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:56:46 +0000] "PATCH /api/authors/1 HTTP/1.1" 404 65 "-" "insomnia/13.3.1"
+2026-10-23 09:57:00 [WARN]: [Operational Error] PUT /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-23 09:57:00 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:57:00 +0000] "PUT /api/authors/1 HTTP/1.1" 404 59 "-" "insomnia/13.3.1"
+2026-10-23 09:57:03 [WARN]: [Operational Error] PUT /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-23 09:57:03 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:57:03 +0000] "PUT /api/authors/1 HTTP/1.1" 404 59 "-" "insomnia/13.3.1"
+2026-10-23 09:58:07 [WARN]: [Operational Error] PATCH /api/authors/1 - Ruta no encontrada: /api/authors/1
+2026-10-23 09:58:07 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:58:07 +0000] "PATCH /api/authors/1 HTTP/1.1" 404 65 "-" "insomnia/13.3.1"
+2026-10-23 09:59:44 [WARN]: [Operational Error] PUT /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-23 09:59:44 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:12:59:44 +0000] "PUT /api/authors/1 HTTP/1.1" 404 59 "-" "insomnia/13.3.1"
+2026-10-23 10:06:52 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 10:06:52 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 10:06:58 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 10:06:58 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 10:07:08 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 10:07:08 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 10:07:12 [WARN]: [Operational Error] PUT /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-23 10:07:12 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:13:07:12 +0000] "PUT /api/authors/1 HTTP/1.1" 404 59 "-" "insomnia/13.3.1"
+2026-10-23 10:07:14 [WARN]: [Operational Error] PUT /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-23 10:07:14 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:13:07:14 +0000] "PUT /api/authors/1 HTTP/1.1" 404 59 "-" "insomnia/13.3.1"
+2026-10-23 10:07:15 [WARN]: [Operational Error] PUT /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-23 10:07:15 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:13:07:15 +0000] "PUT /api/authors/1 HTTP/1.1" 404 59 "-" "insomnia/13.3.1"
+2026-10-23 10:08:27 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 10:08:27 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 10:08:31 [WARN]: [Operational Error] PUT /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-23 10:08:31 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:13:08:31 +0000] "PUT /api/authors/1 HTTP/1.1" 404 59 "-" "insomnia/13.3.1"
+2026-10-23 10:09:10 [WARN]: [Operational Error] POST /api/authors - Ya existe un autor con el nombre 'Gabriel García Márquez'
+2026-10-23 10:09:10 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:13:09:10 +0000] "POST /api/authors HTTP/1.1" 409 90 "-" "insomnia/13.3.1"
+2026-10-23 10:12:18 [INFO]: Autor actualizado: ID=2, Nombre='Gabriel García Márquez (Editado)'
+2026-10-23 10:12:18 [INFO]: ::ffff:127.0.0.1 - - [23/Oct/2026:13:12:18 +0000] "PUT /api/authors/2 HTTP/1.1" 200 213 "-" "insomnia/13.3.1"
+2026-10-23 12:05:52 [ERROR]: ❌ Error fatal al iniciar el servidor:
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1142:49)
+    at afterConnectMultiple (node:net:1723:7)
+2026-10-23 12:06:10 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 12:06:10 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 12:09:28 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 12:09:28 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 12:10:05 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 12:10:05 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 12:11:15 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 12:11:15 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 12:12:44 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 12:12:44 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 12:13:17 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 12:13:17 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-23 12:17:41 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-23 12:17:41 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development

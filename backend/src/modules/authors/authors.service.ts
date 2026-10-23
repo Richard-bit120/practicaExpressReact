@@ -1,4 +1,4 @@
-import { Repository, Like } from 'typeorm';
+import { Repository, ILike } from 'typeorm'; // Se reemplaza 'Like' por 'ILike' para búsquedas insensibles a mayúsculas
 import { AppDataSource } from '../../config/data-source';
 import { Author } from './author.entity';
 import { Book } from '../books/book.entity';
@@ -22,20 +22,22 @@ interface ListAuthorsParams {
 }
 
 export class AuthorsService {
-  private authorRepository: Repository<Author>;
-  private bookRepository: Repository<Book>;
+  // Se obtiene el repositorio bajo demanda para evitar errores si la DB no se inicializó al instanciar la clase
+  private get authorRepository(): Repository<Author> {
+    return AppDataSource.getRepository(Author);
+  }
 
-  constructor() {
-    this.authorRepository = AppDataSource.getRepository(Author);
-    this.bookRepository = AppDataSource.getRepository(Book);
+  private get bookRepository(): Repository<Book> {
+    return AppDataSource.getRepository(Book);
   }
 
   async findAll(params: ListAuthorsParams) {
-    const { search, page = 1, limit = 10 } = params;
+    const page = Math.max(1, Number(params.page) || 1); // Garantiza coerción numérica limpia
+    const limit = Math.max(1, Math.min(100, Number(params.limit) || 10)); // Limita máximo 100 por página
     const skip = (page - 1) * limit;
 
-    const where = search
-      ? [{ name: Like(`%${search}%`) }]
+    const where = params.search
+      ? [{ name: ILike(`%${params.search}%`) }] // Búsqueda flexible case-insensitive
       : {};
 
     const [authors, total] = await this.authorRepository.findAndCount({
@@ -59,7 +61,9 @@ export class AuthorsService {
   async findById(id: number): Promise<Author> {
     const author = await this.authorRepository.findOne({
       where: { id },
-      relations: ['books'],
+      relations: {
+        books: true, // ✅ Sintaxis de objeto booleano corregida para evitar TypeORMError
+      },
     });
 
     if (!author) {
