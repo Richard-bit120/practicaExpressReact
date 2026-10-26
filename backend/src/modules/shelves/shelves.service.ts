@@ -59,7 +59,7 @@ export class ShelvesService {
   async findById(id: number): Promise<Shelf> {
     const shelf = await this.shelfRepository.findOne({
       where: { id },
-      relations: ['books'],
+      //relations: ['books'],
     });
     if (!shelf) {
       throw new AppError(`Estante con ID ${id} no encontrado`, 404);

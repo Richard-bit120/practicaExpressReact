@@ -5,6 +5,7 @@ import { errorMiddleware } from "./shared/middlewares/error.middleware";
 import { notFoundMiddleware } from "./shared/middlewares/not-found.middleware";
 import { requestLoggerMiddleware } from "./shared/middlewares/request-logger.middleware";
 import { authMiddleware } from "./shared/middlewares/auth.middleware";
+import dashboardRoutes from "../../backend/src/modules/dashboard/dashboard.routes";
 
 // Rutas
 import authRoutes from "./modules/auth/auth.routes";
@@ -38,6 +39,7 @@ app.use("/api/genres", authMiddleware, genresRoutes);
 app.use("/api/sagas", authMiddleware, sagasRoutes);
 app.use("/api/shelves", authMiddleware, shelvesRoutes);
 app.use("/api/logs", authMiddleware, logsRoutes);
+app.use("/api/dashboard",authMiddleware, dashboardRoutes);
 
 // Middlewares de error (siempre al final)
 app.use(notFoundMiddleware);

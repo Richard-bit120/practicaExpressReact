@@ -1,0 +1,62 @@
+### Configuración de Variables Globales
+@baseUrl = http://localhost:3000/api
+@authToken = {{login.response.body.token}}
+
+### ==========================================
+### 1. MÓDULO DE AUTENTICACIÓN (AUTH)
+### ==========================================
+
+### Generar JWT con las credenciales del .env
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123!"
+}
+
+### ==========================================
+### 2. MÓDULO DE ESTANTERÍAS (SHELVES)
+### ==========================================
+
+### Listar todas las estanterías (GET /)
+GET {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+
+###
+
+### Obtener una estantería por ID (GET /:id)
+GET {{baseUrl}}/shelves/3
+Authorization: Bearer {{authToken}}
+
+###
+
+### Crear una nueva estantería (POST /)
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0001",
+  "location": "baja",
+  "description": "Estantería de Terror"
+}
+
+###
+
+### Actualizar una estantería (PUT /:id)
+# 💡 Corregido: Usamos los campos reales de tu estantería en lugar de "name"
+PUT {{baseUrl}}/shelves/0001
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "description": "Estantería de Terror Modificada"
+}
+
+###
+
+### Eliminar una estantería (DELETE /:id)
+DELETE {{baseUrl}}/shelves/3
+Authorization: Bearer {{authToken}}

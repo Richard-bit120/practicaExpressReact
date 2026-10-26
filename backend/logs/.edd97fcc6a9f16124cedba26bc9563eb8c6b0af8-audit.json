@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\TSDS\\PROGRAMACION2 BACKyFRONT\\sistema_biblioteca.ArzamendiaRicardoTSDS\\backend\\logs\\.edd97fcc6a9f16124cedba26bc9563eb8c6b0af8-audit.json",
+    "files": [
+        {
+            "date": 1793010773582,
+            "name": "D:\\TSDS\\PROGRAMACION2 BACKyFRONT\\sistema_biblioteca.ArzamendiaRicardoTSDS\\backend\\logs\\app-2026-10-26.log",
+            "hash": "b2cf41245cc9138435b662c1e4f6bdebc8162e79333e3c55823fdb281d7fabfa"
+        }
+    ],
+    "hashType": "sha256"
+}

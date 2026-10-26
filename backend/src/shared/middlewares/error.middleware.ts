@@ -19,6 +19,7 @@ export const errorMiddleware = (
   }
 
   // Errores inesperados (500)
+  console.error("🚨 ERROR REAL QUE CAUSA EL 500:", err);
   logger.error(
     `[Unexpected Error] ${req.method} ${req.path} - ${err.message}`,
     { stack: err.stack },

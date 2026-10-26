@@ -16,10 +16,7 @@ backend/dist/
 frontend/dist/
 
 # Logs
-logs/
-*.log
-backend/logs/
-npm-debug.log*
+
 
 # IDE
 .vscode/

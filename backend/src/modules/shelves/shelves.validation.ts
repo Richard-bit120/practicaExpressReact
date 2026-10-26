@@ -27,9 +27,10 @@ export const updateShelfSchema = yup.object({
   params: yup.object({
     id: yup
       .number()
+      .transform((value, originalValue) => (originalValue === '' ? NaN : Number(originalValue)))
       .typeError('El ID del estante debe ser un número')
-      .integer()
-      .positive()
+      .integer('El ID debe ser un número entero')
+      .positive('El ID debe ser positivo')
       .required('El ID del estante es obligatorio'),
   }),
   body: yup
@@ -39,7 +40,6 @@ export const updateShelfSchema = yup.object({
       location: yup.string().nullable().max(150).trim(),
       description: yup.string().nullable().max(500).trim(),
     })
-    // Se reemplaza .min(1) por .test() para validar objetos en Yup
     .test(
       'at-least-one-field',
       'Debe proporcionar al menos un campo para actualizar',
@@ -51,9 +51,10 @@ export const shelfIdSchema = yup.object({
   params: yup.object({
     id: yup
       .number()
+      .transform((value, originalValue) => (originalValue === '' ? NaN : Number(originalValue)))
       .typeError('El ID del estante debe ser un número')
-      .integer()
-      .positive()
+      .integer('El ID debe ser un número entero')
+      .positive('El ID debe ser positivo')
       .required('ID de estante inválido'),
   }),
 });
@@ -63,12 +64,14 @@ export const listShelvesSchema = yup.object({
     search: yup.string().optional().trim(),
     page: yup
       .number()
+      .transform((value, originalValue) => (originalValue ? Number(originalValue) : undefined))
       .typeError('La página debe ser un número')
       .integer()
       .positive()
       .optional(),
     limit: yup
       .number()
+      .transform((value, originalValue) => (originalValue ? Number(originalValue) : undefined))
       .typeError('El límite debe ser un número')
       .integer()
       .positive()
