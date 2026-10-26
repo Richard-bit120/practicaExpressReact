@@ -1,9 +1,9 @@
-import { Repository, Like } from 'typeorm';
-import { AppDataSource } from '../../config/data-source';
-import { Genre } from './genre.entity';
-import { Book } from '../books/book.entity';
-import { AppError } from '../../shared/errors/app-error';
-import { logger } from '../../shared/logging/logger';
+import { Repository, Like } from "typeorm";
+import { AppDataSource } from "../../config/data-source";
+import { Genre } from "./genre.entity";
+import { Book } from "../books/book.entity";
+import { AppError } from "../../shared/errors/app-error";
+import { logger } from "../../shared/logging/logger";
 
 interface CreateGenreDto {
   name: string;
@@ -22,25 +22,23 @@ interface ListGenresParams {
 }
 
 export class GenresService {
-  private genreRepository: Repository<Genre>;
-  private bookRepository: Repository<Book>;
+  private get genreRepository(): Repository<Genre> {
+    return AppDataSource.getRepository(Genre);
+  }
 
-  constructor() {
-    this.genreRepository = AppDataSource.getRepository(Genre);
-    this.bookRepository = AppDataSource.getRepository(Book);
+  private get bookRepository(): Repository<Book> {
+    return AppDataSource.getRepository(Book);
   }
 
   async findAll(params: ListGenresParams) {
     const { search, page = 1, limit = 10 } = params;
     const skip = (page - 1) * limit;
 
-    const where = search
-      ? [{ name: Like(`%${search}%`) }]
-      : {};
+    const where = search ? [{ name: Like(`%${search}%`) }] : {};
 
     const [genres, total] = await this.genreRepository.findAndCount({
       where,
-      order: { name: 'ASC' },
+      order: { name: "ASC" },
       skip,
       take: limit,
     });
@@ -54,18 +52,25 @@ export class GenresService {
   async findById(id: number): Promise<Genre> {
     const genre = await this.genreRepository.findOne({
       where: { id },
-      relations: ['books'],
+      relations: { books: true },
     });
+
     if (!genre) {
       throw new AppError(`Género con ID ${id} no encontrado`, 404);
     }
+
     return genre;
   }
 
   async create(dto: CreateGenreDto): Promise<Genre> {
-    const existing = await this.genreRepository.findOne({ where: { name: dto.name } });
+    const existing = await this.genreRepository.findOne({
+      where: { name: dto.name },
+    });
     if (existing) {
-      throw new AppError(`Ya existe un género con el nombre '${dto.name}'`, 409);
+      throw new AppError(
+        `Ya existe un género con el nombre '${dto.name}'`,
+        409,
+      );
     }
 
     const genre = this.genreRepository.create({
@@ -85,9 +90,14 @@ export class GenresService {
     }
 
     if (dto.name && dto.name !== genre.name) {
-      const existing = await this.genreRepository.findOne({ where: { name: dto.name } });
+      const existing = await this.genreRepository.findOne({
+        where: { name: dto.name },
+      });
       if (existing) {
-        throw new AppError(`Ya existe un género con el nombre '${dto.name}'`, 409);
+        throw new AppError(
+          `Ya existe un género con el nombre '${dto.name}'`,
+          409,
+        );
       }
       genre.name = dto.name;
     }
@@ -107,11 +117,13 @@ export class GenresService {
       throw new AppError(`Género con ID ${id} no encontrado`, 404);
     }
 
-    const bookCount = await this.bookRepository.count({ where: { genreId: id } });
+    const bookCount = await this.bookRepository.count({
+      where: { genreId: id },
+    });
     if (bookCount > 0) {
       throw new AppError(
         `No se puede eliminar el género '${genre.name}' porque tiene ${bookCount} libro(s) asociado(s)`,
-        409
+        409,
       );
     }
 

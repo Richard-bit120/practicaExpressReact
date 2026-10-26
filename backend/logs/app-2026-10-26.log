@@ -1830,3 +1830,253 @@ TypeORMError: String-array "relations" syntax has been removed. Use object synta
 2026-10-26 12:21:30 [WARN]: [Operational Error] GET /api/shelves/3 - Estante con ID 3 no encontrado
 2026-10-26 12:21:30 [WARN]: GET /api/shelves/3 - 404 (3ms)
 2026-10-26 12:21:32 [INFO]: GET /api/shelves/ - 200 (5ms)
+2026-10-26 18:51:15 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-26 18:51:15 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-26 18:51:53 [INFO]: Login exitoso para usuario: admin
+2026-10-26 18:51:53 [INFO]: POST /api/auth/login - 200 (142ms)
+2026-10-26 18:51:53 [INFO]: GET /api/dashboard/stats - 200 (88ms)
+2026-10-26 18:51:53 [INFO]: GET /api/dashboard/stats - 304 (8ms)
+2026-10-26 18:51:58 [INFO]: GET /api/dashboard/stats - 304 (14ms)
+2026-10-26 18:51:58 [INFO]: GET /api/dashboard/stats - 304 (7ms)
+2026-10-26 18:51:59 [INFO]: GET /api/dashboard/stats - 304 (5ms)
+2026-10-26 18:51:59 [INFO]: GET /api/dashboard/stats - 304 (5ms)
+2026-10-26 18:52:01 [INFO]: GET /api/books?page=1&limit=10 - 304 (10ms)
+2026-10-26 18:52:01 [WARN]: [Operational Error] GET /api/authors - query.limit must be less than or equal to 100
+2026-10-26 18:52:01 [WARN]: GET /api/authors?limit=200 - 400 (5ms)
+2026-10-26 18:52:01 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-26 18:52:01 [WARN]: GET /api/genres?limit=200 - 400 (2ms)
+2026-10-26 18:52:01 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-26 18:52:01 [WARN]: GET /api/shelves?limit=200 - 400 (3ms)
+2026-10-26 18:52:01 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-26 18:52:01 [WARN]: GET /api/sagas?limit=200 - 400 (2ms)
+2026-10-26 18:52:01 [WARN]: [Operational Error] GET /api/authors - query.limit must be less than or equal to 100
+2026-10-26 18:52:01 [WARN]: GET /api/authors?limit=200 - 400 (1ms)
+2026-10-26 18:52:01 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-26 18:52:01 [WARN]: GET /api/genres?limit=200 - 400 (3ms)
+2026-10-26 18:52:01 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-26 18:52:01 [WARN]: GET /api/shelves?limit=200 - 400 (3ms)
+2026-10-26 18:52:01 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-26 18:52:01 [WARN]: GET /api/sagas?limit=200 - 400 (1ms)
+2026-10-26 18:52:01 [INFO]: GET /api/books?page=1&limit=10 - 304 (31ms)
+2026-10-26 18:52:06 [INFO]: GET /api/logs - 200 (20ms)
+2026-10-26 18:52:06 [INFO]: GET /api/logs - 304 (5ms)
+2026-10-26 19:03:17 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:03:17 [INFO]: POST /api/auth/login - 200 (57ms)
+2026-10-26 19:03:20 [INFO]: GET /api/shelves/ - 200 (3ms)
+2026-10-26 19:03:40 [INFO]: Estante creado: ID=1, Código='0001'
+2026-10-26 19:03:40 [INFO]: POST /api/shelves/ - 201 (31ms)
+2026-10-26 19:03:46 [WARN]: [Operational Error] GET /api/shelves/3 - Estante con ID 3 no encontrado
+2026-10-26 19:03:46 [WARN]: GET /api/shelves/3 - 404 (3ms)
+2026-10-26 19:03:51 [INFO]: GET /api/shelves/1 - 200 (3ms)
+2026-10-26 19:04:06 [INFO]: Estante actualizado: ID=1, Código='0001'
+2026-10-26 19:04:06 [INFO]: PUT /api/shelves/1 - 200 (39ms)
+2026-10-26 19:06:05 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:06:05 [INFO]: POST /api/auth/login - 200 (56ms)
+2026-10-26 19:06:10 [INFO]: GET /api/authors?search=Gabriel&page=1&limit=10 - 200 (4ms)
+2026-10-26 19:06:18 [INFO]: Autor creado: ID=3, Nombre='Gabriel García Márquez'
+2026-10-26 19:06:18 [INFO]: POST /api/authors/ - 201 (33ms)
+2026-10-26 19:06:22 [INFO]: GET /api/authors?search=Gabriel&page=1&limit=10 - 200 (4ms)
+2026-10-26 19:06:28 [WARN]: [Operational Error] GET /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-26 19:06:28 [WARN]: GET /api/authors/1 - 404 (9ms)
+2026-10-26 19:06:34 [INFO]: GET /api/authors/3 - 200 (7ms)
+2026-10-26 19:06:41 [WARN]: [Operational Error] PUT /api/authors/1 - Autor con ID 1 no encontrado
+2026-10-26 19:06:41 [WARN]: PUT /api/authors/1 - 404 (5ms)
+2026-10-26 19:06:47 [INFO]: Autor actualizado: ID=3, Nombre='Gabriel García Márquez'
+2026-10-26 19:06:47 [INFO]: PUT /api/authors/3 - 200 (36ms)
+2026-10-26 19:10:16 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:10:16 [INFO]: POST /api/auth/login - 200 (56ms)
+2026-10-26 19:10:18 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:10:18 [INFO]: POST /api/auth/login - 200 (58ms)
+2026-10-26 19:10:18 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:10:18 [INFO]: POST /api/auth/login - 200 (56ms)
+2026-10-26 19:10:20 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:10:20 [INFO]: POST /api/auth/login - 200 (57ms)
+2026-10-26 19:10:25 [INFO]: GET /api/sagas?search=Anillos&page=1&limit=10 - 200 (4ms)
+2026-10-26 19:10:29 [WARN]: [Operational Error] GET /api/sagas/1 - Saga con ID 1 no encontrada
+2026-10-26 19:10:29 [WARN]: GET /api/sagas/1 - 404 (12ms)
+2026-10-26 19:10:33 [INFO]: Saga creada: ID=1, Nombre='El Señor de los Anillos'
+2026-10-26 19:10:33 [INFO]: POST /api/sagas/ - 201 (34ms)
+2026-10-26 19:10:37 [WARN]: [Operational Error] POST /api/sagas/ - Ya existe una saga con el nombre 'El Señor de los Anillos'
+2026-10-26 19:10:37 [WARN]: POST /api/sagas/ - 409 (3ms)
+2026-10-26 19:10:43 [INFO]: GET /api/sagas/1 - 200 (5ms)
+2026-10-26 19:10:46 [INFO]: GET /api/sagas?search=Anillos&page=1&limit=10 - 200 (3ms)
+2026-10-26 19:10:59 [INFO]: Saga actualizada: ID=1, Nombre='El Señor de los Anillos'
+2026-10-26 19:10:59 [INFO]: PUT /api/sagas/1 - 200 (32ms)
+2026-10-26 19:20:25 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-26 19:20:25 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-26 19:23:22 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-26 19:23:22 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-26 19:24:24 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:24:24 [INFO]: POST /api/auth/login - 200 (71ms)
+2026-10-26 19:24:28 [INFO]: GET /api/dashboard/stats - 200 (14ms)
+2026-10-26 19:25:11 [INFO]: GET /api/dashboard/stats - 200 (7ms)
+2026-10-26 19:25:11 [INFO]: GET /api/dashboard/stats - 304 (10ms)
+2026-10-26 19:25:12 [INFO]: GET /api/dashboard/stats - 304 (5ms)
+2026-10-26 19:25:12 [INFO]: GET /api/dashboard/stats - 304 (6ms)
+2026-10-26 19:25:20 [WARN]: [Operational Error] GET /api/authors - query.limit must be less than or equal to 100
+2026-10-26 19:25:20 [WARN]: GET /api/authors?limit=200 - 400 (3ms)
+2026-10-26 19:25:20 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-26 19:25:20 [WARN]: GET /api/genres?limit=200 - 400 (2ms)
+2026-10-26 19:25:20 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-26 19:25:20 [WARN]: GET /api/shelves?limit=200 - 400 (2ms)
+2026-10-26 19:25:20 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-26 19:25:20 [WARN]: GET /api/sagas?limit=200 - 400 (3ms)
+2026-10-26 19:25:20 [INFO]: GET /api/books?page=1&limit=10 - 304 (26ms)
+2026-10-26 19:25:20 [WARN]: [Operational Error] GET /api/authors - query.limit must be less than or equal to 100
+2026-10-26 19:25:20 [WARN]: GET /api/authors?limit=200 - 400 (2ms)
+2026-10-26 19:25:20 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-26 19:25:20 [WARN]: GET /api/genres?limit=200 - 400 (2ms)
+2026-10-26 19:25:20 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-26 19:25:20 [WARN]: GET /api/shelves?limit=200 - 400 (2ms)
+2026-10-26 19:25:20 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-26 19:25:20 [WARN]: GET /api/sagas?limit=200 - 400 (2ms)
+2026-10-26 19:25:20 [INFO]: GET /api/books?page=1&limit=10 - 304 (44ms)
+2026-10-26 19:27:29 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:27:29 [INFO]: POST /api/auth/login - 200 (57ms)
+2026-10-26 19:27:41 [INFO]: GET /api/books?search=Harry&page=1&limit=10 - 200 (4ms)
+2026-10-26 19:27:45 [WARN]: [Operational Error] GET /api/books/1 - Libro con ID 1 no encontrado
+2026-10-26 19:27:45 [WARN]: GET /api/books/1 - 404 (5ms)
+2026-10-26 19:27:50 [INFO]: GET /api/books?search=Harry&page=1&limit=10 - 200 (4ms)
+2026-10-26 19:27:58 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 1 no existe
+2026-10-26 19:27:58 [WARN]: POST /api/books/ - 400 (4ms)
+2026-10-26 19:28:11 [INFO]: GET /api/books?search=Harry&page=1&limit=10 - 200 (4ms)
+2026-10-26 19:28:20 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 1 no existe
+2026-10-26 19:28:20 [WARN]: POST /api/books/ - 400 (4ms)
+2026-10-26 19:28:32 [WARN]: [Operational Error] POST /api/books/ - El género con ID 1 no existe
+2026-10-26 19:28:32 [WARN]: POST /api/books/ - 400 (5ms)
+2026-10-26 19:28:44 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 1 no existe
+2026-10-26 19:28:44 [WARN]: POST /api/books/ - 400 (3ms)
+2026-10-26 19:28:47 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 1 no existe
+2026-10-26 19:28:47 [WARN]: POST /api/books/ - 400 (3ms)
+2026-10-26 19:28:49 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 1 no existe
+2026-10-26 19:28:49 [WARN]: POST /api/books/ - 400 (4ms)
+2026-10-26 19:28:53 [WARN]: [Operational Error] GET /api/books/1 - Libro con ID 1 no encontrado
+2026-10-26 19:28:53 [WARN]: GET /api/books/1 - 404 (4ms)
+2026-10-26 19:28:57 [WARN]: [Operational Error] GET /api/books/1 - Libro con ID 1 no encontrado
+2026-10-26 19:28:57 [WARN]: GET /api/books/1 - 404 (5ms)
+2026-10-26 19:29:25 [WARN]: [Operational Error] PUT /api/books/1 - Libro con ID 1 no encontrado
+2026-10-26 19:29:25 [WARN]: PUT /api/books/1 - 404 (3ms)
+2026-10-26 19:29:26 [WARN]: [Operational Error] PUT /api/books/1 - Libro con ID 1 no encontrado
+2026-10-26 19:29:26 [WARN]: PUT /api/books/1 - 404 (3ms)
+2026-10-26 19:29:27 [WARN]: [Operational Error] PUT /api/books/1 - Libro con ID 1 no encontrado
+2026-10-26 19:29:27 [WARN]: PUT /api/books/1 - 404 (4ms)
+2026-10-26 19:29:30 [WARN]: [Operational Error] PUT /api/books/1 - Libro con ID 1 no encontrado
+2026-10-26 19:29:30 [WARN]: PUT /api/books/1 - 404 (3ms)
+2026-10-26 19:31:01 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:31:01 [INFO]: POST /api/auth/login - 200 (57ms)
+2026-10-26 19:31:06 [INFO]: GET /api/genres?search=Fantas%C3%ADa&page=1&limit=10 - 200 (14ms)
+2026-10-26 19:31:14 [WARN]: [Operational Error] GET /api/genres/1 - Género con ID 1 no encontrado
+2026-10-26 19:31:14 [WARN]: GET /api/genres/1 - 404 (11ms)
+2026-10-26 19:31:19 [INFO]: Género creado: ID=1, Nombre='Fantasía Épica'
+2026-10-26 19:31:19 [INFO]: POST /api/genres/ - 201 (38ms)
+2026-10-26 19:31:24 [INFO]: GET /api/genres/1 - 200 (6ms)
+2026-10-26 19:31:26 [WARN]: [Operational Error] POST /api/genres/ - Ya existe un género con el nombre 'Fantasía Épica'
+2026-10-26 19:31:26 [WARN]: POST /api/genres/ - 409 (3ms)
+2026-10-26 19:31:31 [INFO]: GET /api/genres?search=Fantas%C3%ADa&page=1&limit=10 - 200 (3ms)
+2026-10-26 19:31:37 [INFO]: Género actualizado: ID=1, Nombre='Fantasía Épica'
+2026-10-26 19:31:37 [INFO]: PUT /api/genres/1 - 200 (45ms)
+2026-10-26 19:31:43 [INFO]: GET /api/genres?search=Fantas%C3%ADa&page=1&limit=10 - 200 (4ms)
+2026-10-26 19:32:51 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:32:51 [INFO]: POST /api/auth/login - 200 (56ms)
+2026-10-26 19:33:01 [INFO]: GET /api/logs - 200 (7ms)
+2026-10-26 19:33:55 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:33:55 [INFO]: POST /api/auth/login - 200 (56ms)
+2026-10-26 19:34:02 [INFO]: GET /api/books?search=Harry&page=1&limit=10 - 200 (6ms)
+2026-10-26 19:34:15 [INFO]: GET /api/dashboard/stats - 200 (20ms)
+2026-10-26 19:34:47 [INFO]: Login exitoso para usuario: admin
+2026-10-26 19:34:47 [INFO]: POST /api/auth/login - 200 (57ms)
+2026-10-26 19:34:53 [INFO]: GET /api/books?search=Harry&page=1&limit=10 - 200 (4ms)
+2026-10-26 19:34:58 [INFO]: GET /api/dashboard/stats - 200 (4ms)
+2026-10-26 19:35:08 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 1 no existe
+2026-10-26 19:35:08 [WARN]: POST /api/books/ - 400 (3ms)
+2026-10-26 19:35:19 [INFO]: Libro creado: ID=1, Título='Harry Potter y la Piedra Filosofal'
+2026-10-26 19:35:19 [INFO]: POST /api/books/ - 201 (39ms)
+2026-10-26 19:35:37 [INFO]: GET /api/dashboard/stats - 200 (4ms)
+2026-10-26 19:35:50 [INFO]: Libro creado: ID=2, Título='Harry Potter y la Piedra Filosofal'
+2026-10-26 19:35:50 [INFO]: POST /api/books/ - 201 (116ms)
+2026-10-26 19:35:54 [INFO]: Libro creado: ID=3, Título='Harry Potter y la Piedra Filosofal'
+2026-10-26 19:35:54 [INFO]: POST /api/books/ - 201 (37ms)
+2026-10-26 19:35:55 [INFO]: Libro creado: ID=4, Título='Harry Potter y la Piedra Filosofal'
+2026-10-26 19:35:55 [INFO]: POST /api/books/ - 201 (38ms)
+2026-10-26 19:35:56 [INFO]: Libro creado: ID=5, Título='Harry Potter y la Piedra Filosofal'
+2026-10-26 19:35:56 [INFO]: POST /api/books/ - 201 (39ms)
+2026-10-26 19:35:57 [INFO]: Libro creado: ID=6, Título='Harry Potter y la Piedra Filosofal'
+2026-10-26 19:35:57 [INFO]: POST /api/books/ - 201 (47ms)
+2026-10-26 19:35:58 [INFO]: Libro creado: ID=7, Título='Harry Potter y la Piedra Filosofal'
+2026-10-26 19:35:58 [INFO]: POST /api/books/ - 201 (33ms)
+2026-10-26 19:35:59 [INFO]: Libro creado: ID=8, Título='Harry Potter y la Piedra Filosofal'
+2026-10-26 19:35:59 [INFO]: POST /api/books/ - 201 (51ms)
+2026-10-26 19:36:02 [INFO]: GET /api/dashboard/stats - 200 (4ms)
+2026-10-26 19:36:17 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:17 [INFO]: PUT /api/books/1 - 200 (31ms)
+2026-10-26 19:36:19 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:19 [INFO]: PUT /api/books/1 - 200 (7ms)
+2026-10-26 19:36:20 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:20 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:21 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:21 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:22 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:22 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:22 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:22 [INFO]: PUT /api/books/1 - 200 (7ms)
+2026-10-26 19:36:23 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:23 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:24 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:24 [INFO]: PUT /api/books/1 - 200 (8ms)
+2026-10-26 19:36:24 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:24 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:24 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:24 [INFO]: PUT /api/books/1 - 200 (7ms)
+2026-10-26 19:36:25 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:25 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:25 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:25 [INFO]: PUT /api/books/1 - 200 (7ms)
+2026-10-26 19:36:25 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:25 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:25 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:25 [INFO]: PUT /api/books/1 - 200 (7ms)
+2026-10-26 19:36:25 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:25 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:25 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:25 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:26 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:26 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:26 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:26 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:26 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:26 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:26 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:26 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:26 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:26 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:29 [INFO]: GET /api/dashboard/stats - 200 (5ms)
+2026-10-26 19:36:37 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:37 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:38 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:38 [INFO]: PUT /api/books/1 - 200 (7ms)
+2026-10-26 19:36:38 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:38 [INFO]: PUT /api/books/1 - 200 (7ms)
+2026-10-26 19:36:39 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:39 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:39 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:39 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:39 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:39 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:39 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:39 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:40 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:40 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:40 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:40 [INFO]: PUT /api/books/1 - 200 (80ms)
+2026-10-26 19:36:40 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:40 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:40 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:40 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:40 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:40 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:41 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:41 [INFO]: PUT /api/books/1 - 200 (5ms)
+2026-10-26 19:36:41 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:41 [INFO]: PUT /api/books/1 - 200 (6ms)
+2026-10-26 19:36:41 [INFO]: Libro actualizado: ID=1, Título='Harry Potter y la Piedra Filosofal (Edición Ilustrada)'
+2026-10-26 19:36:41 [INFO]: PUT /api/books/1 - 200 (6ms)

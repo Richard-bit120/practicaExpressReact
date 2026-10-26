@@ -1,0 +1,26 @@
+### Configuración de Variables Globales
+@baseUrl = http://localhost:3000/api
+@authToken = {{login.response.body.token}}
+
+### ==========================================
+### 1. MÓDULO DE AUTENTICACIÓN (AUTH)
+### ==========================================
+
+### Generar JWT con las credenciales del .env
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123!"
+}
+
+### ==========================================
+### 2. MÓDULO DE DASHBOARD
+### ==========================================
+
+### Obtener estadísticas generales del Dashboard (GET /stats)
+# Nota: Se asume que este router está montado bajo la ruta base '/dashboard' en el app.ts
+GET {{baseUrl}}/dashboard/stats
+Authorization: Bearer {{authToken}}

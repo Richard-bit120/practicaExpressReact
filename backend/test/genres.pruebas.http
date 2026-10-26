@@ -1,0 +1,60 @@
+### Configuración de Variables Globales
+@baseUrl = http://localhost:3000/api
+@authToken = {{login.response.body.token}}
+
+### ==========================================
+### 1. MÓDULO DE AUTENTICACIÓN (AUTH)
+### ==========================================
+
+### Generar JWT con las credenciales del .env
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123!"
+}
+
+### ==========================================
+### 2. MÓDULO DE GÉNEROS (GENRES)
+### ==========================================
+
+### Listar todos los géneros con paginación y búsqueda (GET /)
+GET {{baseUrl}}/genres?search=Fantasía&page=1&limit=10
+Authorization: Bearer {{authToken}}
+
+###
+
+### Obtener un género por ID (GET /:id)
+GET {{baseUrl}}/genres/1
+Authorization: Bearer {{authToken}}
+
+###
+
+### Crear un nuevo género (POST /)
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Fantasía Épica",
+  "description": "Subgénero de fantasía caracterizado por su ambientación en mundos ficticios y tramas de gran escala."
+}
+
+###
+
+### Actualizar un género parcialmente (PUT /:id)
+PUT {{baseUrl}}/genres/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "description": "Ficción especulativa ambientada en mundos ficticios, enfocada en magia y aventuras épicas."
+}
+
+###
+
+### Eliminar un género por ID (DELETE /:id)
+DELETE {{baseUrl}}/genres/1
+Authorization: Bearer {{authToken}}

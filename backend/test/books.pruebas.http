@@ -1,0 +1,68 @@
+### Configuración de Variables Globales
+@baseUrl = http://localhost:3000/api
+@authToken = {{login.response.body.token}}
+
+### ==========================================
+### 1. MÓDULO DE AUTENTICACIÓN (AUTH)
+### ==========================================
+
+### Generar JWT con las credenciales del .env
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123!"
+}
+
+### ==========================================
+### 2. MÓDULO DE LIBROS (BOOKS)
+### ==========================================
+
+### Listar todos los libros con paginación y búsqueda (GET /)
+GET {{baseUrl}}/books?search=Harry&page=1&limit=10
+Authorization: Bearer {{authToken}}
+
+###
+
+### Obtener un libro por ID (GET /:id)
+GET {{baseUrl}}/books/1
+Authorization: Bearer {{authToken}}
+
+###
+
+### Crear un nuevo libro (POST /)
+# Nota: Ajusta los IDs (authorId, genreId, sagaId, shelfId) según los que existan en tu BD.
+POST {{baseUrl}}/books/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "title": "Harry Potter y la Piedra Filosofal",
+  "isbn": "9788498387070",
+  "publicationYear": 1997,
+  "pages": 254,
+  "authorId": 3,
+  "genreId": 1,
+  "sagaId": 1,
+  "shelfId": 1
+}
+
+###
+
+### Actualizar un libro parcialmente (PUT /:id)
+PUT {{baseUrl}}/books/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "pages": 260,
+  "title": "Harry Potter y la Piedra Filosofal (Edición Ilustrada)"
+}
+
+###
+
+### Eliminar un libro por ID (DELETE /:id)
+DELETE {{baseUrl}}/books/1
+Authorization: Bearer {{authToken}}

@@ -17,46 +17,44 @@ Content-Type: application/json
 }
 
 ### ==========================================
-### 2. MÓDULO DE ESTANTERÍAS (SHELVES)
+### 2. MÓDULO DE SAGAS (SAGAS)
 ### ==========================================
 
-### Listar todas las estanterías (GET /)
-GET {{baseUrl}}/shelves/
+### Listar todas las sagas con paginación y búsqueda (GET /)
+GET {{baseUrl}}/sagas?search=Anillos&page=1&limit=10
 Authorization: Bearer {{authToken}}
 
 ###
 
-### Obtener una estantería por ID (GET /:id)
-GET {{baseUrl}}/shelves/3
+### Obtener una saga por ID (GET /:id)
+GET {{baseUrl}}/sagas/1
 Authorization: Bearer {{authToken}}
 
 ###
 
-### Crear una nueva estantería (POST /)
-POST {{baseUrl}}/shelves/
-Authorization: Bearer {{authToken}}
-Content-Type: application/json
-
-{
-  "code": "0001",
-  "location": "baja",
-  "description": "Estantería de Terror"
-}
-
-###
-
-### Actualizar una estantería (PUT /:id)
-# 💡 Corregido: Usamos los campos reales de tu estantería en lugar de "name"
-PUT {{baseUrl}}/shelves/0001
+### Crear una nueva saga (POST /)
+POST {{baseUrl}}/sagas/
 Authorization: Bearer {{authToken}}
 Content-Type: application/json
 
 {
-  "description": "Estantería de Terror Modificada"
+  "name": "El Señor de los Anillos",
+  "description": "Saga épica de fantasía escrita por J.R.R. Tolkien."
 }
 
 ###
 
-### Eliminar una estantería (DELETE /:id)
-DELETE {{baseUrl}}/shelves/3
+### Actualizar una saga parcialmente (PUT /:id)
+PUT {{baseUrl}}/sagas/1
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "description": "Saga épica de fantasía ambientada en la Tierra Media."
+}
+
+###
+
+### Eliminar una saga por ID (DELETE /:id)
+DELETE {{baseUrl}}/sagas/1
 Authorization: Bearer {{authToken}}

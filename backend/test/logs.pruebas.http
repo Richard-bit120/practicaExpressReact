@@ -1,0 +1,32 @@
+### Configuración de Variables Globales
+@baseUrl = http://localhost:3000/api
+@authToken = {{login.response.body.token}}
+
+### ==========================================
+### 1. MÓDULO DE AUTENTICACIÓN (AUTH)
+### ==========================================
+
+### Generar JWT con las credenciales del .env
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123!"
+}
+
+### ==========================================
+### 2. MÓDULO DE LOGS
+### ==========================================
+
+### Listar todos los logs del sistema (GET /)
+# Nota: Si tu controlador de logs soporta paginación o filtrado por nivel, puedes agregar ?limit=50&level=error
+GET {{baseUrl}}/logs
+Authorization: Bearer {{authToken}}
+
+###
+
+### Limpiar/Eliminar los logs antiguos (DELETE /cleanup)
+DELETE {{baseUrl}}/logs/cleanup
+Authorization: Bearer {{authToken}}

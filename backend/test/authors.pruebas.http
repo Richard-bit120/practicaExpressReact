@@ -1,0 +1,60 @@
+### Configuración de Variables Globales
+@baseUrl = http://localhost:3000/api
+@authToken = {{login.response.body.token}}
+
+### ==========================================
+### 1. MÓDULO DE AUTENTICACIÓN (AUTH)
+### ==========================================
+
+### Generar JWT con las credenciales del .env
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123!"
+}
+
+### ==========================================
+### 2. MÓDULO DE AUTORES (AUTHORS)
+### ==========================================
+
+### Listar todos los autores con paginación y búsqueda (GET /)
+GET {{baseUrl}}/authors?search=Gabriel&page=1&limit=10
+Authorization: Bearer {{authToken}}
+
+###
+
+### Obtener un autor por ID (GET /:id)
+GET {{baseUrl}}/authors/3
+Authorization: Bearer {{authToken}}
+
+###
+
+### Crear un nuevo autor (POST /)
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Gabriel García Márquez",
+  "biography": "Escritor y periodista colombiano, premio Nobel de Literatura en 1982."
+}
+
+###
+
+### Actualizar un autor parcialmente (PUT /:id)
+PUT {{baseUrl}}/authors/3
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "biography": "Escritor, periodista y guionista colombiano galardonado con el Nobel."
+}
+
+###
+
+### Eliminar un autor por ID (DELETE /:id)
+DELETE {{baseUrl}}/authors/1
+Authorization: Bearer {{authToken}}

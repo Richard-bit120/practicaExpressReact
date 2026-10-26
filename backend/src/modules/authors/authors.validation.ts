@@ -44,7 +44,7 @@ export const updateAuthorSchema = yup.object({
     .test(
       "at-least-one-field",
       "Debe proporcionar al menos un campo para actualizar",
-      (value) => !!value && Object.keys(value).length > 0 // Comprueba que el objeto body contenga al menos una clave
+      (value) => !!value && Object.keys(value).length > 0, // Comprueba que el objeto body contenga al menos una clave
     ),
 });
 
