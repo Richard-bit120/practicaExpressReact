@@ -1,0 +1,173 @@
+2026-10-27 08:35:10 [ERROR]: ❌ Error fatal al iniciar el servidor:
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1142:49)
+    at afterConnectMultiple (node:net:1723:7)
+2026-10-27 08:35:29 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-27 08:35:29 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/books - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/books?page=1&limit=10 - 401 (5ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/authors - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/authors?limit=200 - 401 (4ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/genres - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/genres?limit=200 - 401 (3ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/shelves - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/shelves?limit=200 - 401 (2ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/sagas - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/sagas?limit=200 - 401 (2ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/books - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/books?page=1&limit=10 - 401 (1ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/authors - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/authors?limit=200 - 401 (2ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/genres - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/genres?limit=200 - 401 (7ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/shelves - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/shelves?limit=200 - 401 (2ms)
+2026-10-27 08:35:33 [WARN]: [Operational Error] GET /api/sagas - Token inválido.
+2026-10-27 08:35:33 [WARN]: GET /api/sagas?limit=200 - 401 (1ms)
+2026-10-27 08:35:35 [INFO]: Login exitoso para usuario: admin
+2026-10-27 08:35:35 [INFO]: POST /api/auth/login - 200 (113ms)
+2026-10-27 08:35:35 [INFO]: GET /api/dashboard/stats - 200 (30ms)
+2026-10-27 08:35:35 [INFO]: GET /api/dashboard/stats - 304 (7ms)
+2026-10-27 08:36:00 [INFO]: Login exitoso para usuario: admin
+2026-10-27 08:36:00 [INFO]: POST /api/auth/login - 200 (69ms)
+2026-10-27 08:36:03 [INFO]: GET /api/sagas?search=Anillos&page=1&limit=10 - 200 (10ms)
+2026-10-27 08:36:09 [INFO]: Saga creada: ID=1, Nombre='El Señor de los Anillos'
+2026-10-27 08:36:09 [INFO]: POST /api/sagas/ - 201 (30ms)
+2026-10-27 08:36:19 [WARN]: [Operational Error] GET /api/dashboard/stats - Token inválido.
+2026-10-27 08:36:19 [WARN]: GET /api/dashboard/stats - 401 (2ms)
+2026-10-27 08:36:47 [INFO]: Login exitoso para usuario: admin
+2026-10-27 08:36:47 [INFO]: POST /api/auth/login - 200 (65ms)
+2026-10-27 08:36:51 [INFO]: GET /api/dashboard/stats - 200 (8ms)
+2026-10-27 08:37:08 [INFO]: GET /api/dashboard/stats - 200 (3ms)
+2026-10-27 08:37:25 [INFO]: Login exitoso para usuario: admin
+2026-10-27 08:37:25 [INFO]: POST /api/auth/login - 200 (62ms)
+2026-10-27 08:37:30 [INFO]: GET /api/books?search=Harry&page=1&limit=10 - 200 (8ms)
+2026-10-27 08:37:34 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 3 no existe
+2026-10-27 08:37:34 [WARN]: POST /api/books/ - 400 (6ms)
+2026-10-27 08:37:45 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 1 no existe
+2026-10-27 08:37:45 [WARN]: POST /api/books/ - 400 (2ms)
+2026-10-27 08:37:51 [WARN]: [Operational Error] POST /api/books/ - El autor con ID 4 no existe
+2026-10-27 08:37:51 [WARN]: POST /api/books/ - 400 (3ms)
+2026-10-27 08:38:02 [INFO]: GET /api/dashboard/stats - 200 (5ms)
+2026-10-27 08:38:02 [INFO]: GET /api/dashboard/stats - 304 (8ms)
+2026-10-27 08:38:29 [WARN]: [Operational Error] POST /api/books/ - El estante con ID 1 no existe
+2026-10-27 08:38:29 [WARN]: POST /api/books/ - 400 (7ms)
+2026-10-27 08:39:47 [INFO]: Libro creado: ID=1, Título='Harry Potter y la Piedra Filosofal'
+2026-10-27 08:39:47 [INFO]: POST /api/books/ - 201 (65ms)
+2026-10-27 08:39:59 [INFO]: Login exitoso para usuario: admin
+2026-10-27 08:39:59 [INFO]: POST /api/auth/login - 200 (62ms)
+2026-10-27 08:40:01 [INFO]: GET /api/dashboard/stats - 200 (6ms)
+2026-10-27 08:40:06 [INFO]: GET /api/dashboard/stats - 200 (4ms)
+2026-10-27 08:40:06 [INFO]: GET /api/dashboard/stats - 304 (6ms)
+2026-10-27 08:40:09 [WARN]: [Operational Error] GET /api/authors - query.limit must be less than or equal to 100
+2026-10-27 08:40:09 [WARN]: GET /api/authors?limit=200 - 400 (2ms)
+2026-10-27 08:40:09 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-27 08:40:09 [WARN]: GET /api/genres?limit=200 - 400 (2ms)
+2026-10-27 08:40:09 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-27 08:40:09 [WARN]: GET /api/shelves?limit=200 - 400 (4ms)
+2026-10-27 08:40:09 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-27 08:40:09 [WARN]: GET /api/sagas?limit=200 - 400 (4ms)
+2026-10-27 08:40:09 [WARN]: [Operational Error] GET /api/authors - query.limit must be less than or equal to 100
+2026-10-27 08:40:09 [WARN]: GET /api/authors?limit=200 - 400 (2ms)
+2026-10-27 08:40:09 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-27 08:40:09 [WARN]: GET /api/genres?limit=200 - 400 (2ms)
+2026-10-27 08:40:09 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-27 08:40:09 [WARN]: GET /api/shelves?limit=200 - 400 (2ms)
+2026-10-27 08:40:09 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-27 08:40:09 [WARN]: GET /api/sagas?limit=200 - 400 (2ms)
+2026-10-27 08:40:09 [INFO]: GET /api/books?page=1&limit=10 - 200 (78ms)
+2026-10-27 08:40:10 [INFO]: GET /api/books?page=1&limit=10 - 304 (25ms)
+2026-10-27 08:47:12 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-27 08:47:12 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-27 08:48:02 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-27 08:48:02 [WARN]: GET /api/genres?limit=200 - 400 (4ms)
+2026-10-27 08:48:02 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-27 08:48:02 [WARN]: GET /api/shelves?limit=200 - 400 (2ms)
+2026-10-27 08:48:02 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-27 08:48:02 [WARN]: GET /api/sagas?limit=200 - 400 (1ms)
+2026-10-27 08:48:02 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-27 08:48:02 [WARN]: GET /api/genres?limit=200 - 400 (2ms)
+2026-10-27 08:48:02 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-27 08:48:02 [WARN]: GET /api/shelves?limit=200 - 400 (1ms)
+2026-10-27 08:48:02 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-27 08:48:02 [WARN]: GET /api/sagas?limit=200 - 400 (1ms)
+2026-10-27 08:48:02 [INFO]: GET /api/books?page=1&limit=10 - 304 (59ms)
+2026-10-27 08:48:02 [INFO]: GET /api/authors?limit=200 - 200 (70ms)
+2026-10-27 08:48:03 [INFO]: GET /api/authors?limit=200 - 304 (187ms)
+2026-10-27 08:48:03 [INFO]: GET /api/books?page=1&limit=10 - 304 (216ms)
+2026-10-27 08:48:09 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-27 08:48:09 [WARN]: GET /api/genres?limit=200 - 400 (5ms)
+2026-10-27 08:48:09 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-27 08:48:09 [WARN]: GET /api/shelves?limit=200 - 400 (2ms)
+2026-10-27 08:48:09 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-27 08:48:09 [WARN]: GET /api/sagas?limit=200 - 400 (2ms)
+2026-10-27 08:48:09 [INFO]: GET /api/authors?limit=200 - 304 (20ms)
+2026-10-27 08:48:09 [WARN]: [Operational Error] GET /api/genres - query.limit must be less than or equal to 100
+2026-10-27 08:48:09 [WARN]: GET /api/genres?limit=200 - 400 (3ms)
+2026-10-27 08:48:09 [WARN]: [Operational Error] GET /api/shelves - query.limit must be less than or equal to 100
+2026-10-27 08:48:09 [WARN]: GET /api/shelves?limit=200 - 400 (2ms)
+2026-10-27 08:48:09 [WARN]: [Operational Error] GET /api/sagas - query.limit must be less than or equal to 100
+2026-10-27 08:48:09 [WARN]: GET /api/sagas?limit=200 - 400 (1ms)
+2026-10-27 08:48:09 [INFO]: GET /api/books?page=1&limit=10 - 304 (46ms)
+2026-10-27 08:48:09 [INFO]: GET /api/authors?limit=200 - 304 (11ms)
+2026-10-27 08:48:09 [INFO]: GET /api/books?page=1&limit=10 - 304 (14ms)
+2026-10-27 08:50:32 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-27 08:50:32 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-27 08:50:48 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-27 08:50:48 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-27 08:51:17 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-27 08:51:17 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-27 08:51:30 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-27 08:51:30 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-27 08:51:58 [INFO]: GET /api/books?page=1&limit=10 - 304 (41ms)
+2026-10-27 08:51:58 [INFO]: GET /api/sagas?limit=200 - 200 (38ms)
+2026-10-27 08:51:58 [INFO]: GET /api/authors?limit=200 - 304 (53ms)
+2026-10-27 08:51:58 [INFO]: GET /api/genres?limit=200 - 200 (51ms)
+2026-10-27 08:51:58 [INFO]: GET /api/shelves?limit=200 - 200 (53ms)
+2026-10-27 08:51:58 [INFO]: GET /api/sagas?limit=200 - 304 (31ms)
+2026-10-27 08:51:58 [INFO]: GET /api/authors?limit=200 - 304 (35ms)
+2026-10-27 08:51:58 [INFO]: GET /api/books?page=1&limit=10 - 304 (72ms)
+2026-10-27 08:51:58 [INFO]: GET /api/genres?limit=200 - 304 (49ms)
+2026-10-27 08:51:58 [INFO]: GET /api/shelves?limit=200 - 304 (48ms)
+2026-10-27 08:51:59 [INFO]: GET /api/authors?limit=200 - 304 (12ms)
+2026-10-27 08:51:59 [INFO]: GET /api/genres?limit=200 - 304 (13ms)
+2026-10-27 08:51:59 [INFO]: GET /api/shelves?limit=200 - 304 (13ms)
+2026-10-27 08:51:59 [INFO]: GET /api/sagas?limit=200 - 304 (12ms)
+2026-10-27 08:51:59 [INFO]: GET /api/books?page=1&limit=10 - 304 (27ms)
+2026-10-27 08:51:59 [INFO]: GET /api/authors?limit=200 - 304 (21ms)
+2026-10-27 08:51:59 [INFO]: GET /api/genres?limit=200 - 304 (18ms)
+2026-10-27 08:51:59 [INFO]: GET /api/shelves?limit=200 - 304 (17ms)
+2026-10-27 08:51:59 [INFO]: GET /api/sagas?limit=200 - 304 (11ms)
+2026-10-27 08:51:59 [INFO]: GET /api/books?page=1&limit=10 - 304 (19ms)
+2026-10-27 08:52:43 [INFO]: GET /api/authors?limit=200 - 304 (9ms)
+2026-10-27 08:52:43 [INFO]: GET /api/genres?limit=200 - 304 (11ms)
+2026-10-27 08:52:43 [INFO]: GET /api/shelves?limit=200 - 304 (13ms)
+2026-10-27 08:52:43 [INFO]: GET /api/sagas?limit=200 - 304 (15ms)
+2026-10-27 08:52:43 [INFO]: GET /api/books?page=1&limit=10 - 304 (23ms)
+2026-10-27 08:52:43 [INFO]: GET /api/authors?limit=200 - 304 (16ms)
+2026-10-27 08:52:43 [INFO]: GET /api/genres?limit=200 - 304 (14ms)
+2026-10-27 08:52:43 [INFO]: GET /api/shelves?limit=200 - 304 (18ms)
+2026-10-27 08:52:43 [INFO]: GET /api/sagas?limit=200 - 304 (19ms)
+2026-10-27 08:52:43 [INFO]: GET /api/books?page=1&limit=10 - 304 (31ms)
+2026-10-27 08:53:13 [INFO]: GET /api/logs - 200 (9ms)
+2026-10-27 08:53:13 [INFO]: GET /api/logs - 304 (8ms)
+2026-10-27 08:53:19 [INFO]: GET /api/shelves?page=1&limit=10 - 200 (3ms)
+2026-10-27 08:53:19 [INFO]: GET /api/shelves?page=1&limit=10 - 304 (4ms)
+2026-10-27 08:53:22 [INFO]: GET /api/sagas?page=1&limit=10 - 200 (3ms)
+2026-10-27 08:53:22 [INFO]: GET /api/sagas?page=1&limit=10 - 304 (6ms)
+2026-10-27 08:53:25 [INFO]: GET /api/genres?page=1&limit=10 - 304 (4ms)
+2026-10-27 08:53:25 [INFO]: GET /api/genres?page=1&limit=10 - 304 (5ms)
+2026-10-27 08:53:26 [INFO]: GET /api/authors?page=1&limit=10 - 304 (3ms)
+2026-10-27 08:53:26 [INFO]: GET /api/authors?page=1&limit=10 - 304 (5ms)
+2026-10-27 08:53:28 [INFO]: GET /api/authors?limit=200 - 304 (12ms)
+2026-10-27 08:53:28 [INFO]: GET /api/genres?limit=200 - 304 (11ms)
+2026-10-27 08:53:28 [INFO]: GET /api/shelves?limit=200 - 304 (11ms)
+2026-10-27 08:53:28 [INFO]: GET /api/sagas?limit=200 - 304 (11ms)
+2026-10-27 08:53:28 [INFO]: GET /api/books?page=1&limit=10 - 304 (24ms)
+2026-10-27 08:53:28 [INFO]: GET /api/authors?limit=200 - 304 (18ms)
+2026-10-27 08:53:28 [INFO]: GET /api/genres?limit=200 - 304 (17ms)
+2026-10-27 08:53:28 [INFO]: GET /api/shelves?limit=200 - 304 (18ms)
+2026-10-27 08:53:28 [INFO]: GET /api/sagas?limit=200 - 304 (18ms)
+2026-10-27 08:53:28 [INFO]: GET /api/books?page=1&limit=10 - 304 (26ms)
+2026-10-27 08:53:33 [INFO]: GET /api/dashboard/stats - 304 (4ms)
+2026-10-27 08:53:33 [INFO]: GET /api/dashboard/stats - 304 (10ms)

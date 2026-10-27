@@ -7,7 +7,7 @@ export const listLogsSchema = yup.object({
     dateFrom: yup.date().optional(),
     dateTo: yup.date().optional(),
     page: yup.number().integer().positive().optional(),
-    limit: yup.number().integer().positive().max(200).optional(),
+    limit: yup.number().integer().positive().max(500).optional(),
   }),
 });
 

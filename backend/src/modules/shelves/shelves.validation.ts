@@ -75,7 +75,7 @@ export const listShelvesSchema = yup.object({
       .typeError('El límite debe ser un número')
       .integer()
       .positive()
-      .max(100)
+      .max(500)
       .optional(),
   }),
 });

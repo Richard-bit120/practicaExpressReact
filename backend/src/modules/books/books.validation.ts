@@ -106,6 +106,6 @@ export const listBooksSchema = yup.object({
     sagaId: yup.number().typeError('ID de saga inválido').integer().positive().optional(),
     year: yup.number().typeError('Año inválido').integer().min(1000).optional(),
     page: yup.number().typeError('La página debe ser un número').integer().positive().optional(),
-    limit: yup.number().typeError('El límite debe ser un número').integer().positive().max(100).optional(),
+    limit: yup.number().typeError('El límite debe ser un número').integer().positive().max(500).optional(),
   }),
 });

@@ -43,10 +43,10 @@ Content-Type: application/json
   "isbn": "9788498387070",
   "publicationYear": 1997,
   "pages": 254,
-  "authorId": 3,
+  "authorId": 2,
   "genreId": 1,
   "sagaId": 1,
-  "shelfId": 1
+  "shelfId": 2
 }
 
 ###

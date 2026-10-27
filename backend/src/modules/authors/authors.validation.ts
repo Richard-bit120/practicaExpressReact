@@ -84,7 +84,7 @@ export const listAuthorsSchema = yup.object({
       .typeError("Límite debe ser un número")
       .integer()
       .positive()
-      .max(100)
+      .max(500)
       .optional(),
   }),
 });
