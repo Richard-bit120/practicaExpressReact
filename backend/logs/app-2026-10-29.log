@@ -1,0 +1,67 @@
+2026-10-29 20:19:05 [ERROR]: ❌ Error fatal al iniciar el servidor:
+AggregateError [ECONNREFUSED]: 
+    at internalConnectMultiple (node:net:1142:49)
+    at afterConnectMultiple (node:net:1723:7)
+2026-10-29 20:24:48 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-29 20:24:48 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-29 20:24:57 [WARN]: [Operational Error] GET /api/dashboard/stats - Sesión expirada. Inicie sesión nuevamente.
+2026-10-29 20:24:57 [WARN]: GET /api/dashboard/stats - 401 (5ms)
+2026-10-29 20:24:57 [WARN]: [Operational Error] GET /api/dashboard/stats - Sesión expirada. Inicie sesión nuevamente.
+2026-10-29 20:24:57 [WARN]: GET /api/dashboard/stats - 401 (2ms)
+2026-10-29 20:25:00 [WARN]: Intento de login fallido para usuario: arquero@unpicadito.com
+2026-10-29 20:25:00 [WARN]: [Operational Error] POST /api/auth/login - Credenciales inválidas
+2026-10-29 20:25:00 [WARN]: POST /api/auth/login - 401 (70ms)
+2026-10-29 20:26:30 [WARN]: Contraseña incorrecta para usuario: admin
+2026-10-29 20:26:30 [WARN]: [Operational Error] POST /api/auth/login - Credenciales inválidas
+2026-10-29 20:26:30 [WARN]: POST /api/auth/login - 401 (66ms)
+2026-10-29 20:26:44 [WARN]: Contraseña incorrecta para usuario: admin
+2026-10-29 20:26:44 [WARN]: [Operational Error] POST /api/auth/login - Credenciales inválidas
+2026-10-29 20:26:44 [WARN]: POST /api/auth/login - 401 (65ms)
+2026-10-29 20:26:57 [WARN]: Contraseña incorrecta para usuario: admin
+2026-10-29 20:26:57 [WARN]: [Operational Error] POST /api/auth/login - Credenciales inválidas
+2026-10-29 20:26:57 [WARN]: POST /api/auth/login - 401 (62ms)
+2026-10-29 20:27:07 [WARN]: Contraseña incorrecta para usuario: admin
+2026-10-29 20:27:07 [WARN]: [Operational Error] POST /api/auth/login - Credenciales inválidas
+2026-10-29 20:27:07 [WARN]: POST /api/auth/login - 401 (64ms)
+2026-10-29 20:27:47 [INFO]: Login exitoso para usuario: admin
+2026-10-29 20:27:47 [INFO]: POST /api/auth/login - 200 (62ms)
+2026-10-29 20:27:48 [INFO]: GET /api/dashboard/stats - 304 (436ms)
+2026-10-29 20:27:48 [INFO]: GET /api/dashboard/stats - 304 (5ms)
+2026-10-29 20:27:55 [INFO]: GET /api/authors?limit=200 - 200 (16ms)
+2026-10-29 20:27:55 [INFO]: GET /api/genres?limit=200 - 200 (15ms)
+2026-10-29 20:27:55 [INFO]: GET /api/shelves?limit=200 - 200 (15ms)
+2026-10-29 20:27:55 [INFO]: GET /api/sagas?limit=200 - 200 (15ms)
+2026-10-29 20:27:55 [INFO]: GET /api/books?page=1&limit=10 - 304 (33ms)
+2026-10-29 20:27:55 [INFO]: GET /api/authors?limit=200 - 304 (18ms)
+2026-10-29 20:27:55 [INFO]: GET /api/genres?limit=200 - 304 (18ms)
+2026-10-29 20:27:55 [INFO]: GET /api/shelves?limit=200 - 304 (26ms)
+2026-10-29 20:27:55 [INFO]: GET /api/sagas?limit=200 - 304 (25ms)
+2026-10-29 20:27:55 [INFO]: GET /api/books?page=1&limit=10 - 304 (28ms)
+2026-10-29 20:27:57 [INFO]: GET /api/authors?page=1&limit=10 - 304 (3ms)
+2026-10-29 20:27:57 [INFO]: GET /api/authors?page=1&limit=10 - 304 (3ms)
+2026-10-29 20:28:01 [INFO]: GET /api/genres?page=1&limit=10 - 200 (3ms)
+2026-10-29 20:28:01 [INFO]: GET /api/genres?page=1&limit=10 - 304 (5ms)
+2026-10-29 20:37:46 [INFO]: GET /api/logs - 200 (294ms)
+2026-10-29 20:37:46 [INFO]: GET /api/logs - 304 (7ms)
+2026-10-29 20:38:06 [INFO]: GET /api/logs?level=ERROR - 200 (5ms)
+2026-10-29 20:38:09 [INFO]: GET /api/logs?level=DEBUG - 200 (1ms)
+2026-10-29 20:38:16 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02 - 200 (2ms)
+2026-10-29 20:38:19 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-04 - 200 (2ms)
+2026-10-29 20:38:23 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-04 - 304 (3ms)
+2026-10-29 20:38:24 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-04 - 304 (2ms)
+2026-10-29 20:38:25 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-04 - 304 (2ms)
+2026-10-29 20:38:30 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-01 - 200 (3ms)
+2026-10-29 20:38:32 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-01 - 304 (2ms)
+2026-10-29 20:38:32 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-01 - 304 (2ms)
+2026-10-29 20:38:33 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-01 - 304 (2ms)
+2026-10-29 20:38:33 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-01 - 304 (2ms)
+2026-10-29 20:38:36 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-31 - 200 (3ms)
+2026-10-29 20:38:37 [INFO]: GET /api/logs?level=DEBUG&dateFrom=2026-10-02&dateTo=2026-10-31 - 304 (2ms)
+2026-10-29 20:38:41 [INFO]: GET /api/logs?dateFrom=2026-10-02&dateTo=2026-10-31 - 200 (4ms)
+2026-10-29 20:38:51 [INFO]: GET /api/logs?dateFrom=2026-10-29&dateTo=2026-10-31 - 200 (2ms)
+2026-10-29 20:39:02 [INFO]: GET /api/logs?dateFrom=2026-10-08&dateTo=2026-10-31 - 200 (6ms)
+2026-10-29 20:39:05 [INFO]: GET /api/logs?dateFrom=2026-10-08&dateTo=2026-10-10 - 200 (2ms)
+2026-10-29 20:39:09 [INFO]: GET /api/logs?dateFrom=2026-10-08&dateTo=2026-10-16 - 200 (2ms)
+2026-10-29 20:39:12 [INFO]: GET /api/logs?dateFrom=2026-10-08&dateTo=2026-10-24 - 200 (4ms)
+2026-10-29 20:44:27 [INFO]: GET /api/dashboard/stats - 304 (4ms)
+2026-10-29 20:44:27 [INFO]: GET /api/dashboard/stats - 304 (5ms)
