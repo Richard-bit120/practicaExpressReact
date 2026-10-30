@@ -1,0 +1,241 @@
+### ==========================================
+### CARGA MASIVA DE SAGAS (20 REGISTROS)
+### ==========================================
+
+### Saga 1: Harry Potter
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Harry Potter",
+  "description": "Saga de fantasía sobre un joven mago y sus aventuras en la Escuela Hogwarts de Magia y Hechicería."
+}
+
+###
+
+### Saga 2: El Señor de los Anillos
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "El Señor de los Anillos",
+  "description": "Saga épica de fantasía ambientada en la Tierra Media y la lucha por destruir el Anillo Único."
+}
+
+###
+
+### Saga 3: Canción de Hielo y Fuego
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Canción de Hielo y Fuego",
+  "description": "Serie de fantasía oscura centrada en las luchas de poder por el Trono de Hierro en Poniente."
+}
+
+###
+
+### Saga 4: Las Crónicas de Narnia
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Las Crónicas de Narnia",
+  "description": "Saga de literatura infantil y juvenil ambientada en un mundo mágico habitado por animales parlantes."
+}
+
+###
+
+### Saga 5: Fundación
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Fundación",
+  "description": "Serie de ciencia ficción centrada en la psicohistoria y la preservación del conocimiento en la caída del Imperio Galáctico."
+}
+
+###
+
+### Saga 6: Los Juegos del Hambre
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Los Juegos del Hambre",
+  "description": "Trilogía distópica sobre Panem, la opresión del Capitolio y la rebelión liderada por Katniss Everdeen."
+}
+
+###
+
+### Saga 7: Dune
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Dune",
+  "description": "Saga de ciencia ficción sobre política, religión y ecología en el planeta desértico Arrakis."
+}
+
+###
+
+### Saga 8: La Torre Oscura
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "La Torre Oscura",
+  "description": "Saga que combina fantasía, terror y wéstern en la búsqueda del pistolero Roland Deschain."
+}
+
+###
+
+### Saga 9: Percy Jackson y los Dioses del Olimpo
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Percy Jackson y los Dioses del Olimpo",
+  "description": "Saga juvenil basada en la mitología griega adaptada al mundo moderno."
+}
+
+###
+
+### Saga 10: Geralt de Rivia (The Witcher)
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Geralt de Rivia",
+  "description": "Saga de fantasía heroica sobre las aventuras del brujo y cazador de monstruos Geralt de Rivia."
+}
+
+###
+
+### Saga 11: Mundodisco
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Mundodisco",
+  "description": "Serie satírica de fantasía ambientada en un mundo plano sostenido por cuatro elefantes sobre una tortuga gigante."
+}
+
+###
+
+### Saga 12: Nacidos de la Bruma (Mistborn)
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Nacidos de la Bruma",
+  "description": "Saga de fantasía épica con un sistema de magia único basado en la quema de metales."
+}
+
+###
+
+### Saga 13: La Rueda del Tiempo
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "La Rueda del Tiempo",
+  "description": "Extensa saga de fantasía sobre el ciclo eterno de la historia y la lucha entre la Luz y la Sombra."
+}
+
+###
+
+### Saga 14: Divergente
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Divergente",
+  "description": "Trilogía distópica ambientada en una sociedad dividida en facciones basadas en virtudes humanas."
+}
+
+###
+
+### Saga 15: El Corredor del Laberinto (Maze Runner)
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "El Corredor del Laberinto",
+  "description": "Saga distópica y de ciencia ficción sobre jóvenes atrapados en un laberinto cambiante y mortal."
+}
+
+###
+
+### Saga 16: Los Bridgerton
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Los Bridgerton",
+  "description": "Serie de novelas románticas ambientadas en la alta sociedad inglesa de la época de la Regencia."
+}
+
+###
+
+### Saga 17: El Archivo de las Tormentas
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "El Archivo de las Tormentas",
+  "description": "Saga de fantasía épica ambientada en el convulso mundo de Roshar y los Caballeros Radiantes."
+}
+
+###
+
+### Saga 18: La Materia Oscura
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "La Materia Oscura",
+  "description": "Trilogía de fantasía que explora universos paralelos, la física cuántica y la metafísica."
+}
+
+###
+
+### Saga 19: Trilogía de la Niebla
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Trilogía de la Niebla",
+  "description": "Serie de novelas juveniles de misterio y elementos sobrenaturales de Carlos Ruiz Zafón."
+}
+
+###
+
+### Saga 20: El Creador de Reyes / Crónica del Asesino de Reyes
+POST {{baseUrl}}/sagas/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Crónica del Asesino de Reyes",
+  "description": "Saga de fantasía narrada en primera persona sobre la vida y leyenda del músico y mago Kvothe."
+}

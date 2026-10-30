@@ -1,0 +1,400 @@
+2026-10-30 08:16:58 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 08:16:58 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 08:19:19 [WARN]: [Operational Error] GET /api/dashboard/stats - Sesión expirada. Inicie sesión nuevamente.
+2026-10-30 08:19:19 [WARN]: GET /api/dashboard/stats - 401 (7ms)
+2026-10-30 08:19:19 [WARN]: [Operational Error] GET /api/dashboard/stats - Sesión expirada. Inicie sesión nuevamente.
+2026-10-30 08:19:19 [WARN]: GET /api/dashboard/stats - 401 (2ms)
+2026-10-30 08:19:21 [INFO]: Login exitoso para usuario: admin
+2026-10-30 08:19:21 [INFO]: POST /api/auth/login - 200 (106ms)
+2026-10-30 08:19:22 [INFO]: GET /api/dashboard/stats - 304 (78ms)
+2026-10-30 08:19:22 [INFO]: GET /api/dashboard/stats - 304 (5ms)
+2026-10-30 08:19:27 [INFO]: GET /api/logs - 200 (69ms)
+2026-10-30 08:19:27 [INFO]: GET /api/logs - 304 (8ms)
+2026-10-30 10:32:04 [INFO]: GET /api/logs - 200 (8ms)
+2026-10-30 10:32:04 [INFO]: GET /api/logs - 304 (6ms)
+2026-10-30 11:33:31 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 11:33:31 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 11:34:22 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 11:34:22 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 11:35:48 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 11:35:48 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 11:37:00 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 11:37:00 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 11:38:30 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 11:38:30 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 11:39:47 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 11:39:47 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 11:52:02 [INFO]: Login exitoso para usuario: admin
+2026-10-30 11:52:02 [INFO]: POST /api/auth/login - 200 (81ms)
+2026-10-30 11:53:04 [INFO]: Autor creado: ID=3, Nombre='Isabel Allende'
+2026-10-30 11:53:04 [INFO]: POST /api/authors/ - 201 (452ms)
+2026-10-30 11:53:28 [INFO]: Autor creado: ID=4, Nombre='Jorge Luis Borges'
+2026-10-30 11:53:28 [INFO]: POST /api/authors/ - 201 (69ms)
+2026-10-30 11:53:50 [INFO]: Autor creado: ID=5, Nombre='Mario Vargas Llosa'
+2026-10-30 11:53:50 [INFO]: POST /api/authors/ - 201 (57ms)
+2026-10-30 11:54:07 [INFO]: Autor creado: ID=6, Nombre='Julio Cortázar'
+2026-10-30 11:54:07 [INFO]: POST /api/authors/ - 201 (88ms)
+2026-10-30 11:54:50 [INFO]: Autor creado: ID=7, Nombre='Octavio Paz'
+2026-10-30 11:54:50 [INFO]: POST /api/authors/ - 201 (439ms)
+2026-10-30 11:55:06 [INFO]: Autor creado: ID=8, Nombre='Laura Esquivel'
+2026-10-30 11:55:06 [INFO]: POST /api/authors/ - 201 (102ms)
+2026-10-30 11:55:26 [INFO]: Autor creado: ID=9, Nombre='Miguel de Cervantes'
+2026-10-30 11:55:26 [INFO]: POST /api/authors/ - 201 (28ms)
+2026-10-30 11:55:41 [INFO]: Autor creado: ID=10, Nombre='Federico García Lorca'
+2026-10-30 11:55:41 [INFO]: POST /api/authors/ - 201 (108ms)
+2026-10-30 11:55:56 [INFO]: Autor creado: ID=11, Nombre='Carlos Fuentes'
+2026-10-30 11:55:56 [INFO]: POST /api/authors/ - 201 (25ms)
+2026-10-30 11:56:23 [INFO]: Autor creado: ID=12, Nombre='Jane Austen'
+2026-10-30 11:56:23 [INFO]: POST /api/authors/ - 201 (40ms)
+2026-10-30 11:56:38 [INFO]: Autor creado: ID=13, Nombre='George Orwell'
+2026-10-30 11:56:38 [INFO]: POST /api/authors/ - 201 (58ms)
+2026-10-30 11:59:11 [INFO]: Autor creado: ID=14, Nombre='Stephen King'
+2026-10-30 11:59:11 [INFO]: POST /api/authors/ - 201 (440ms)
+2026-10-30 12:02:35 [INFO]: Login exitoso para usuario: admin
+2026-10-30 12:02:35 [INFO]: POST /api/auth/login - 200 (73ms)
+2026-10-30 12:03:04 [INFO]: Género creado: ID=2, Nombre='Realismo Mágico'
+2026-10-30 12:03:04 [INFO]: POST /api/genres/ - 201 (43ms)
+2026-10-30 12:03:17 [INFO]: Género creado: ID=3, Nombre='Ciencia Ficción'
+2026-10-30 12:03:17 [INFO]: POST /api/genres/ - 201 (92ms)
+2026-10-30 12:03:35 [INFO]: Género creado: ID=4, Nombre='Ensayo'
+2026-10-30 12:03:35 [INFO]: POST /api/genres/ - 201 (53ms)
+2026-10-30 12:03:48 [INFO]: Género creado: ID=5, Nombre='Novela Histórica'
+2026-10-30 12:03:48 [INFO]: POST /api/genres/ - 201 (100ms)
+2026-10-30 12:04:03 [INFO]: Género creado: ID=6, Nombre='Dramaturgia'
+2026-10-30 12:04:03 [INFO]: POST /api/genres/ - 201 (52ms)
+2026-10-30 12:04:15 [WARN]: [Operational Error] POST /api/genres/ - Ya existe un género con el nombre 'Terror'
+2026-10-30 12:04:15 [WARN]: POST /api/genres/ - 409 (5ms)
+2026-10-30 12:04:34 [INFO]: Género creado: ID=7, Nombre='Policial y Novela Negra'
+2026-10-30 12:04:34 [INFO]: POST /api/genres/ - 201 (83ms)
+2026-10-30 12:04:51 [INFO]: Género creado: ID=8, Nombre='Fantasía Épica'
+2026-10-30 12:04:51 [INFO]: POST /api/genres/ - 201 (55ms)
+2026-10-30 12:05:04 [INFO]: Género creado: ID=9, Nombre='Poesía'
+2026-10-30 12:05:04 [INFO]: POST /api/genres/ - 201 (100ms)
+2026-10-30 12:05:17 [INFO]: Género creado: ID=10, Nombre='Romance'
+2026-10-30 12:05:17 [INFO]: POST /api/genres/ - 201 (60ms)
+2026-10-30 12:05:34 [INFO]: Género creado: ID=11, Nombre='Distopía'
+2026-10-30 12:05:34 [INFO]: POST /api/genres/ - 201 (38ms)
+2026-10-30 12:05:46 [INFO]: Género creado: ID=12, Nombre='Suspenso'
+2026-10-30 12:05:46 [INFO]: POST /api/genres/ - 201 (115ms)
+2026-10-30 12:06:00 [INFO]: Género creado: ID=13, Nombre='Biografía'
+2026-10-30 12:06:00 [INFO]: POST /api/genres/ - 201 (58ms)
+2026-10-30 12:06:13 [INFO]: Género creado: ID=14, Nombre='Cuento Corto'
+2026-10-30 12:06:13 [INFO]: POST /api/genres/ - 201 (45ms)
+2026-10-30 12:06:25 [INFO]: Género creado: ID=15, Nombre='Filosofía'
+2026-10-30 12:06:25 [INFO]: POST /api/genres/ - 201 (85ms)
+2026-10-30 12:06:44 [INFO]: Género creado: ID=16, Nombre='Aventura'
+2026-10-30 12:06:44 [INFO]: POST /api/genres/ - 201 (43ms)
+2026-10-30 12:06:56 [INFO]: Género creado: ID=17, Nombre='Novela Psicológica'
+2026-10-30 12:06:56 [INFO]: POST /api/genres/ - 201 (48ms)
+2026-10-30 12:07:10 [INFO]: Género creado: ID=18, Nombre='Ficción Contemporánea'
+2026-10-30 12:07:10 [INFO]: POST /api/genres/ - 201 (82ms)
+2026-10-30 12:07:24 [INFO]: Género creado: ID=19, Nombre='Mitología y Leyendas'
+2026-10-30 12:07:24 [INFO]: POST /api/genres/ - 201 (59ms)
+2026-10-30 12:07:38 [INFO]: Género creado: ID=20, Nombre='Crecimiento Personal'
+2026-10-30 12:07:38 [INFO]: POST /api/genres/ - 201 (55ms)
+2026-10-30 12:09:38 [INFO]: Login exitoso para usuario: admin
+2026-10-30 12:09:38 [INFO]: POST /api/auth/login - 200 (62ms)
+2026-10-30 12:10:21 [INFO]: Saga creada: ID=2, Nombre='Harry Potter'
+2026-10-30 12:10:21 [INFO]: POST /api/sagas/ - 201 (64ms)
+2026-10-30 12:10:32 [WARN]: [Operational Error] POST /api/sagas/ - Ya existe una saga con el nombre 'El Señor de los Anillos'
+2026-10-30 12:10:32 [WARN]: POST /api/sagas/ - 409 (2ms)
+2026-10-30 12:10:53 [INFO]: Saga creada: ID=3, Nombre='Canción de Hielo y Fuego'
+2026-10-30 12:10:53 [INFO]: POST /api/sagas/ - 201 (68ms)
+2026-10-30 12:11:31 [INFO]: Saga creada: ID=4, Nombre='Las Crónicas de Narnia'
+2026-10-30 12:11:31 [INFO]: POST /api/sagas/ - 201 (258ms)
+2026-10-30 12:11:45 [INFO]: Saga creada: ID=5, Nombre='Fundación'
+2026-10-30 12:11:45 [INFO]: POST /api/sagas/ - 201 (92ms)
+2026-10-30 12:11:55 [INFO]: Saga creada: ID=6, Nombre='Los Juegos del Hambre'
+2026-10-30 12:11:55 [INFO]: POST /api/sagas/ - 201 (107ms)
+2026-10-30 12:12:09 [INFO]: Saga creada: ID=7, Nombre='Dune'
+2026-10-30 12:12:09 [INFO]: POST /api/sagas/ - 201 (85ms)
+2026-10-30 12:12:22 [INFO]: Saga creada: ID=8, Nombre='La Torre Oscura'
+2026-10-30 12:12:22 [INFO]: POST /api/sagas/ - 201 (18ms)
+2026-10-30 12:12:34 [INFO]: Saga creada: ID=9, Nombre='Percy Jackson y los Dioses del Olimpo'
+2026-10-30 12:12:34 [INFO]: POST /api/sagas/ - 201 (92ms)
+2026-10-30 12:12:49 [INFO]: Saga creada: ID=10, Nombre='Geralt de Rivia'
+2026-10-30 12:12:49 [INFO]: POST /api/sagas/ - 201 (53ms)
+2026-10-30 12:13:00 [INFO]: Saga creada: ID=11, Nombre='Mundodisco'
+2026-10-30 12:13:00 [INFO]: POST /api/sagas/ - 201 (48ms)
+2026-10-30 12:13:14 [INFO]: Saga creada: ID=12, Nombre='Nacidos de la Bruma'
+2026-10-30 12:13:14 [INFO]: POST /api/sagas/ - 201 (97ms)
+2026-10-30 12:13:28 [INFO]: Saga creada: ID=13, Nombre='La Rueda del Tiempo'
+2026-10-30 12:13:28 [INFO]: POST /api/sagas/ - 201 (12ms)
+2026-10-30 12:13:39 [INFO]: Saga creada: ID=14, Nombre='Divergente'
+2026-10-30 12:13:39 [INFO]: POST /api/sagas/ - 201 (47ms)
+2026-10-30 12:13:55 [INFO]: Saga creada: ID=15, Nombre='El Corredor del Laberinto'
+2026-10-30 12:13:55 [INFO]: POST /api/sagas/ - 201 (91ms)
+2026-10-30 12:14:05 [INFO]: Saga creada: ID=16, Nombre='Los Bridgerton'
+2026-10-30 12:14:05 [INFO]: POST /api/sagas/ - 201 (47ms)
+2026-10-30 12:14:17 [INFO]: Saga creada: ID=17, Nombre='El Archivo de las Tormentas'
+2026-10-30 12:14:17 [INFO]: POST /api/sagas/ - 201 (54ms)
+2026-10-30 12:14:33 [INFO]: Saga creada: ID=18, Nombre='La Materia Oscura'
+2026-10-30 12:14:33 [INFO]: POST /api/sagas/ - 201 (76ms)
+2026-10-30 12:14:44 [INFO]: Saga creada: ID=19, Nombre='Trilogía de la Niebla'
+2026-10-30 12:14:44 [INFO]: POST /api/sagas/ - 201 (56ms)
+2026-10-30 12:14:58 [INFO]: Saga creada: ID=20, Nombre='Crónica del Asesino de Reyes'
+2026-10-30 12:14:58 [INFO]: POST /api/sagas/ - 201 (54ms)
+2026-10-30 15:31:58 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 15:31:58 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 15:32:11 [INFO]: GET /api/logs - 200 (224ms)
+2026-10-30 15:32:11 [INFO]: GET /api/logs - 304 (34ms)
+2026-10-30 15:32:19 [INFO]: GET /api/dashboard/stats - 200 (157ms)
+2026-10-30 15:32:19 [INFO]: GET /api/dashboard/stats - 304 (10ms)
+2026-10-30 15:32:22 [INFO]: GET /api/authors?limit=200 - 200 (37ms)
+2026-10-30 15:32:22 [INFO]: GET /api/genres?limit=200 - 200 (32ms)
+2026-10-30 15:32:22 [INFO]: GET /api/shelves?limit=200 - 304 (34ms)
+2026-10-30 15:32:22 [INFO]: GET /api/sagas?limit=200 - 200 (38ms)
+2026-10-30 15:32:22 [INFO]: GET /api/books?page=1&limit=10 - 304 (69ms)
+2026-10-30 15:32:22 [INFO]: GET /api/authors?limit=200 - 304 (35ms)
+2026-10-30 15:32:22 [INFO]: GET /api/genres?limit=200 - 304 (77ms)
+2026-10-30 15:32:22 [INFO]: GET /api/shelves?limit=200 - 304 (75ms)
+2026-10-30 15:32:22 [INFO]: GET /api/sagas?limit=200 - 304 (80ms)
+2026-10-30 15:32:22 [INFO]: GET /api/books?page=1&limit=10 - 304 (84ms)
+2026-10-30 15:33:04 [INFO]: GET /api/books?page=1&limit=10&authorId=4&genreId=8&shelfId=2&sagaId=16&year=1964 - 200 (48ms)
+2026-10-30 15:33:08 [INFO]: GET /api/authors?limit=200 - 304 (17ms)
+2026-10-30 15:33:08 [INFO]: GET /api/genres?limit=200 - 304 (17ms)
+2026-10-30 15:33:08 [INFO]: GET /api/shelves?limit=200 - 304 (19ms)
+2026-10-30 15:33:08 [INFO]: GET /api/sagas?limit=200 - 304 (19ms)
+2026-10-30 15:33:08 [INFO]: GET /api/authors?limit=200 - 304 (30ms)
+2026-10-30 15:33:08 [INFO]: GET /api/genres?limit=200 - 304 (29ms)
+2026-10-30 15:33:08 [INFO]: GET /api/shelves?limit=200 - 304 (27ms)
+2026-10-30 15:33:08 [INFO]: GET /api/sagas?limit=200 - 304 (24ms)
+2026-10-30 15:33:54 [INFO]: Libro creado: ID=2, Título='HolaYChau'
+2026-10-30 15:33:54 [INFO]: POST /api/books - 201 (227ms)
+2026-10-30 15:33:56 [INFO]: GET /api/authors?limit=200 - 304 (24ms)
+2026-10-30 15:33:56 [INFO]: GET /api/genres?limit=200 - 304 (22ms)
+2026-10-30 15:33:56 [INFO]: GET /api/shelves?limit=200 - 304 (22ms)
+2026-10-30 15:33:56 [INFO]: GET /api/sagas?limit=200 - 304 (26ms)
+2026-10-30 15:33:56 [INFO]: GET /api/books?page=1&limit=10 - 200 (54ms)
+2026-10-30 15:33:56 [INFO]: GET /api/authors?limit=200 - 304 (34ms)
+2026-10-30 15:33:56 [INFO]: GET /api/genres?limit=200 - 304 (33ms)
+2026-10-30 15:33:56 [INFO]: GET /api/shelves?limit=200 - 304 (29ms)
+2026-10-30 15:33:56 [INFO]: GET /api/sagas?limit=200 - 304 (32ms)
+2026-10-30 15:33:56 [INFO]: GET /api/books?page=1&limit=10 - 304 (53ms)
+2026-10-30 15:37:18 [INFO]: Login exitoso para usuario: admin
+2026-10-30 15:37:18 [INFO]: POST /api/auth/login - 200 (396ms)
+2026-10-30 15:37:21 [INFO]: Login exitoso para usuario: admin
+2026-10-30 15:37:21 [INFO]: POST /api/auth/login - 200 (120ms)
+2026-10-30 15:37:22 [INFO]: Login exitoso para usuario: admin
+2026-10-30 15:37:22 [INFO]: POST /api/auth/login - 200 (101ms)
+2026-10-30 15:37:23 [INFO]: Login exitoso para usuario: admin
+2026-10-30 15:37:23 [INFO]: POST /api/auth/login - 200 (104ms)
+2026-10-30 15:38:27 [INFO]: Login exitoso para usuario: admin
+2026-10-30 15:38:27 [INFO]: POST /api/auth/login - 200 (105ms)
+2026-10-30 15:38:30 [WARN]: [Operational Error] POST /api/shelves/ - Ya existe un estante con el código '0001'
+2026-10-30 15:38:30 [WARN]: POST /api/shelves/ - 409 (7ms)
+2026-10-30 15:38:37 [WARN]: [Operational Error] POST /api/shelves/ - Ya existe un estante con el código '0002'
+2026-10-30 15:38:37 [WARN]: POST /api/shelves/ - 409 (6ms)
+2026-10-30 15:38:44 [INFO]: Estante creado: ID=5, Código='0003'
+2026-10-30 15:38:44 [INFO]: POST /api/shelves/ - 201 (53ms)
+2026-10-30 15:38:49 [INFO]: Estante creado: ID=6, Código='0004'
+2026-10-30 15:38:49 [INFO]: POST /api/shelves/ - 201 (73ms)
+2026-10-30 15:38:53 [INFO]: Estante creado: ID=7, Código='0005'
+2026-10-30 15:38:53 [INFO]: POST /api/shelves/ - 201 (51ms)
+2026-10-30 15:38:57 [INFO]: Estante creado: ID=8, Código='0006'
+2026-10-30 15:38:57 [INFO]: POST /api/shelves/ - 201 (55ms)
+2026-10-30 15:38:59 [INFO]: Estante creado: ID=9, Código='0007'
+2026-10-30 15:38:59 [INFO]: POST /api/shelves/ - 201 (55ms)
+2026-10-30 15:39:02 [INFO]: Estante creado: ID=10, Código='0008'
+2026-10-30 15:39:02 [INFO]: POST /api/shelves/ - 201 (67ms)
+2026-10-30 15:39:04 [INFO]: Estante creado: ID=11, Código='0009'
+2026-10-30 15:39:04 [INFO]: POST /api/shelves/ - 201 (49ms)
+2026-10-30 15:39:07 [INFO]: Estante creado: ID=12, Código='0010'
+2026-10-30 15:39:07 [INFO]: POST /api/shelves/ - 201 (45ms)
+2026-10-30 15:39:09 [INFO]: Estante creado: ID=13, Código='0011'
+2026-10-30 15:39:09 [INFO]: POST /api/shelves/ - 201 (39ms)
+2026-10-30 15:39:12 [INFO]: Estante creado: ID=14, Código='0012'
+2026-10-30 15:39:12 [INFO]: POST /api/shelves/ - 201 (27ms)
+2026-10-30 15:39:15 [INFO]: Estante creado: ID=15, Código='0013'
+2026-10-30 15:39:15 [INFO]: POST /api/shelves/ - 201 (46ms)
+2026-10-30 15:39:17 [INFO]: Estante creado: ID=16, Código='0014'
+2026-10-30 15:39:17 [INFO]: POST /api/shelves/ - 201 (58ms)
+2026-10-30 15:39:21 [INFO]: Estante creado: ID=17, Código='0015'
+2026-10-30 15:39:21 [INFO]: POST /api/shelves/ - 201 (59ms)
+2026-10-30 15:39:22 [INFO]: Estante creado: ID=18, Código='0016'
+2026-10-30 15:39:22 [INFO]: POST /api/shelves/ - 201 (65ms)
+2026-10-30 15:39:26 [INFO]: Estante creado: ID=19, Código='0017'
+2026-10-30 15:39:26 [INFO]: POST /api/shelves/ - 201 (53ms)
+2026-10-30 15:39:28 [INFO]: Estante creado: ID=20, Código='0018'
+2026-10-30 15:39:28 [INFO]: POST /api/shelves/ - 201 (59ms)
+2026-10-30 15:39:33 [INFO]: Estante creado: ID=21, Código='0019'
+2026-10-30 15:39:33 [INFO]: POST /api/shelves/ - 201 (83ms)
+2026-10-30 15:39:35 [INFO]: Estante creado: ID=22, Código='0020'
+2026-10-30 15:39:35 [INFO]: POST /api/shelves/ - 201 (34ms)
+2026-10-30 15:39:49 [INFO]: GET /api/shelves?limit=200 - 200 (12ms)
+2026-10-30 15:39:49 [INFO]: GET /api/sagas?limit=200 - 304 (14ms)
+2026-10-30 15:39:49 [INFO]: GET /api/shelves?limit=200 - 304 (18ms)
+2026-10-30 15:39:49 [INFO]: GET /api/sagas?limit=200 - 304 (18ms)
+2026-10-30 15:39:49 [INFO]: GET /api/authors?limit=200 - 304 (81ms)
+2026-10-30 15:39:49 [INFO]: GET /api/authors?limit=200 - 304 (11ms)
+2026-10-30 15:39:49 [INFO]: GET /api/genres?limit=200 - 304 (99ms)
+2026-10-30 15:39:49 [INFO]: GET /api/books?page=1&limit=10 - 304 (117ms)
+2026-10-30 15:39:49 [INFO]: GET /api/genres?limit=200 - 304 (17ms)
+2026-10-30 15:39:49 [INFO]: GET /api/books?page=1&limit=10 - 304 (35ms)
+2026-10-30 15:39:50 [INFO]: GET /api/dashboard/stats - 200 (47ms)
+2026-10-30 15:39:50 [INFO]: GET /api/dashboard/stats - 304 (7ms)
+2026-10-30 15:40:46 [INFO]: Login exitoso para usuario: admin
+2026-10-30 15:40:46 [INFO]: POST /api/auth/login - 200 (101ms)
+2026-10-30 15:40:49 [WARN]: [Operational Error] POST /api/authors/ - Ya existe un autor con el nombre 'Isabel Allende'
+2026-10-30 15:40:49 [WARN]: POST /api/authors/ - 409 (5ms)
+2026-10-30 15:40:51 [WARN]: [Operational Error] POST /api/authors/ - Ya existe un autor con el nombre 'Jorge Luis Borges'
+2026-10-30 15:40:51 [WARN]: POST /api/authors/ - 409 (4ms)
+2026-10-30 15:40:54 [WARN]: [Operational Error] POST /api/authors/ - Ya existe un autor con el nombre 'Mario Vargas Llosa'
+2026-10-30 15:40:54 [WARN]: POST /api/authors/ - 409 (5ms)
+2026-10-30 15:40:56 [WARN]: [Operational Error] POST /api/authors/ - Ya existe un autor con el nombre 'Julio Cortázar'
+2026-10-30 15:40:56 [WARN]: POST /api/authors/ - 409 (3ms)
+2026-10-30 15:40:58 [WARN]: [Operational Error] POST /api/authors/ - Ya existe un autor con el nombre 'Octavio Paz'
+2026-10-30 15:40:58 [WARN]: POST /api/authors/ - 409 (4ms)
+2026-10-30 15:41:03 [INFO]: Autor creado: ID=15, Nombre='Pablo Neruda'
+2026-10-30 15:41:03 [INFO]: POST /api/authors/ - 201 (48ms)
+2026-10-30 15:41:05 [INFO]: Autor creado: ID=16, Nombre='Oscar Wilde'
+2026-10-30 15:41:05 [INFO]: POST /api/authors/ - 201 (63ms)
+2026-10-30 15:41:08 [INFO]: Autor creado: ID=17, Nombre='Virginia Woolf'
+2026-10-30 15:41:08 [INFO]: POST /api/authors/ - 201 (80ms)
+2026-10-30 15:41:11 [INFO]: Autor creado: ID=18, Nombre='Edgar Allan Poe'
+2026-10-30 15:41:11 [INFO]: POST /api/authors/ - 201 (32ms)
+2026-10-30 15:41:13 [INFO]: Autor creado: ID=19, Nombre='Ernest Hemingway'
+2026-10-30 15:41:13 [INFO]: POST /api/authors/ - 201 (58ms)
+2026-10-30 15:41:15 [INFO]: Autor creado: ID=20, Nombre='Franz Kafka'
+2026-10-30 15:41:15 [INFO]: POST /api/authors/ - 201 (42ms)
+2026-10-30 15:41:18 [INFO]: Autor creado: ID=21, Nombre='J.K. Rowling'
+2026-10-30 15:41:18 [INFO]: POST /api/authors/ - 201 (59ms)
+2026-10-30 15:41:20 [INFO]: Autor creado: ID=22, Nombre='Agatha Christie'
+2026-10-30 15:41:20 [INFO]: POST /api/authors/ - 201 (25ms)
+2026-10-30 15:41:23 [WARN]: [Operational Error] POST /api/authors/ - Ya existe un autor con el nombre 'Stephen King'
+2026-10-30 15:41:23 [WARN]: POST /api/authors/ - 409 (7ms)
+2026-10-30 15:41:25 [WARN]: [Operational Error] POST /api/authors/ - Ya existe un autor con el nombre 'George Orwell'
+2026-10-30 15:41:25 [WARN]: POST /api/authors/ - 409 (5ms)
+2026-10-30 15:42:28 [INFO]: GET /api/dashboard/stats - 200 (301ms)
+2026-10-30 15:42:28 [INFO]: GET /api/dashboard/stats - 304 (6ms)
+2026-10-30 16:18:04 [INFO]: GET /api/dashboard/stats - 304 (3ms)
+2026-10-30 16:18:04 [INFO]: GET /api/dashboard/stats - 304 (6ms)
+2026-10-30 16:18:08 [INFO]: GET /api/authors?limit=200 - 200 (8ms)
+2026-10-30 16:18:08 [INFO]: GET /api/genres?limit=200 - 304 (9ms)
+2026-10-30 16:18:08 [INFO]: GET /api/sagas?limit=200 - 304 (5ms)
+2026-10-30 16:18:08 [INFO]: GET /api/authors?limit=200 - 304 (8ms)
+2026-10-30 16:18:08 [INFO]: GET /api/genres?limit=200 - 304 (8ms)
+2026-10-30 16:18:08 [INFO]: GET /api/sagas?limit=200 - 304 (7ms)
+2026-10-30 16:18:08 [INFO]: GET /api/books?page=1&limit=10 - 304 (42ms)
+2026-10-30 16:18:08 [INFO]: GET /api/shelves?limit=200 - 304 (35ms)
+2026-10-30 16:18:08 [INFO]: GET /api/shelves?limit=200 - 304 (6ms)
+2026-10-30 16:18:08 [INFO]: GET /api/books?page=1&limit=10 - 304 (13ms)
+2026-10-30 16:18:15 [INFO]: GET /api/books?page=1&limit=10&search=hola - 200 (5ms)
+2026-10-30 16:18:15 [INFO]: GET /api/books?page=1&limit=10&search=hola - 304 (5ms)
+2026-10-30 16:18:16 [INFO]: GET /api/books?page=1&limit=10&search=hola - 304 (5ms)
+2026-10-30 16:18:19 [INFO]: GET /api/books?page=1&limit=10&search=hola - 304 (5ms)
+2026-10-30 16:18:23 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:18:23 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (3ms)
+2026-10-30 16:18:32 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:18:32 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:18:33 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:18:33 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (2ms)
+2026-10-30 16:18:43 [INFO]: GET /api/authors?limit=200 - 304 (9ms)
+2026-10-30 16:18:43 [INFO]: GET /api/genres?limit=200 - 304 (10ms)
+2026-10-30 16:18:43 [INFO]: GET /api/shelves?limit=200 - 304 (10ms)
+2026-10-30 16:18:43 [INFO]: GET /api/sagas?limit=200 - 304 (10ms)
+2026-10-30 16:18:43 [INFO]: GET /api/books?page=1&limit=10 - 304 (18ms)
+2026-10-30 16:18:43 [INFO]: GET /api/authors?limit=200 - 304 (14ms)
+2026-10-30 16:18:43 [INFO]: GET /api/genres?limit=200 - 304 (13ms)
+2026-10-30 16:18:43 [INFO]: GET /api/shelves?limit=200 - 304 (12ms)
+2026-10-30 16:18:43 [INFO]: GET /api/sagas?limit=200 - 304 (12ms)
+2026-10-30 16:18:43 [INFO]: GET /api/books?page=1&limit=10 - 304 (16ms)
+2026-10-30 16:18:45 [INFO]: GET /api/books?page=1&limit=10 - 304 (4ms)
+2026-10-30 16:18:46 [INFO]: GET /api/books?page=1&limit=10 - 304 (4ms)
+2026-10-30 16:18:50 [INFO]: GET /api/books?page=1&limit=10&search=hola - 304 (5ms)
+2026-10-30 16:19:02 [INFO]: GET /api/books?page=1&limit=10&search=hola - 304 (4ms)
+2026-10-30 16:19:07 [INFO]: GET /api/books?page=1&limit=10&search=hola - 304 (5ms)
+2026-10-30 16:19:09 [INFO]: GET /api/authors?page=1&limit=10 - 200 (4ms)
+2026-10-30 16:19:09 [INFO]: GET /api/authors?page=1&limit=10 - 304 (5ms)
+2026-10-30 16:19:13 [INFO]: GET /api/authors/22 - 200 (7ms)
+2026-10-30 16:19:13 [INFO]: GET /api/authors/22 - 304 (5ms)
+2026-10-30 16:19:21 [WARN]: [Operational Error] PUT /api/authors/22 - Sesión expirada. Inicie sesión nuevamente.
+2026-10-30 16:19:21 [WARN]: PUT /api/authors/22 - 401 (1ms)
+2026-10-30 16:19:23 [INFO]: Login exitoso para usuario: admin
+2026-10-30 16:19:23 [INFO]: POST /api/auth/login - 200 (60ms)
+2026-10-30 16:19:23 [INFO]: GET /api/dashboard/stats - 304 (3ms)
+2026-10-30 16:19:23 [INFO]: GET /api/dashboard/stats - 304 (4ms)
+2026-10-30 16:19:25 [INFO]: GET /api/authors?page=1&limit=10 - 304 (2ms)
+2026-10-30 16:19:25 [INFO]: GET /api/authors?page=1&limit=10 - 304 (6ms)
+2026-10-30 16:19:28 [INFO]: GET /api/authors/22 - 200 (5ms)
+2026-10-30 16:19:28 [INFO]: GET /api/authors/22 - 304 (5ms)
+2026-10-30 16:19:32 [INFO]: Autor actualizado: ID=22, Nombre='Agatha Christiee'
+2026-10-30 16:19:32 [INFO]: PUT /api/authors/22 - 200 (64ms)
+2026-10-30 16:19:33 [INFO]: GET /api/authors?page=1&limit=10 - 200 (4ms)
+2026-10-30 16:19:33 [INFO]: GET /api/authors?page=1&limit=10 - 304 (7ms)
+2026-10-30 16:19:38 [INFO]: GET /api/authors?limit=200 - 200 (7ms)
+2026-10-30 16:19:39 [INFO]: GET /api/genres?limit=200 - 304 (8ms)
+2026-10-30 16:19:39 [INFO]: GET /api/shelves?limit=200 - 304 (8ms)
+2026-10-30 16:19:39 [INFO]: GET /api/sagas?limit=200 - 304 (8ms)
+2026-10-30 16:19:39 [INFO]: GET /api/books?page=1&limit=10 - 304 (18ms)
+2026-10-30 16:19:39 [INFO]: GET /api/authors?limit=200 - 304 (14ms)
+2026-10-30 16:19:39 [INFO]: GET /api/genres?limit=200 - 304 (13ms)
+2026-10-30 16:19:39 [INFO]: GET /api/shelves?limit=200 - 304 (13ms)
+2026-10-30 16:19:39 [INFO]: GET /api/sagas?limit=200 - 304 (12ms)
+2026-10-30 16:19:39 [INFO]: GET /api/books?page=1&limit=10 - 304 (17ms)
+2026-10-30 16:19:43 [INFO]: GET /api/books/1 - 200 (131ms)
+2026-10-30 16:19:43 [INFO]: GET /api/books/1 - 304 (3ms)
+2026-10-30 16:19:46 [INFO]: GET /api/authors?limit=200 - 304 (7ms)
+2026-10-30 16:19:46 [INFO]: GET /api/genres?limit=200 - 304 (7ms)
+2026-10-30 16:19:46 [INFO]: GET /api/shelves?limit=200 - 304 (7ms)
+2026-10-30 16:19:46 [INFO]: GET /api/sagas?limit=200 - 304 (7ms)
+2026-10-30 16:19:46 [INFO]: GET /api/authors?limit=200 - 304 (11ms)
+2026-10-30 16:19:46 [INFO]: GET /api/genres?limit=200 - 304 (10ms)
+2026-10-30 16:19:46 [INFO]: GET /api/shelves?limit=200 - 304 (9ms)
+2026-10-30 16:19:46 [INFO]: GET /api/sagas?limit=200 - 304 (9ms)
+2026-10-30 16:19:46 [INFO]: GET /api/books/1 - 304 (9ms)
+2026-10-30 16:19:46 [INFO]: GET /api/books/1 - 304 (3ms)
+2026-10-30 16:19:48 [INFO]: GET /api/books/1 - 304 (3ms)
+2026-10-30 16:19:48 [INFO]: GET /api/books/1 - 304 (4ms)
+2026-10-30 16:19:50 [INFO]: GET /api/authors?limit=200 - 304 (9ms)
+2026-10-30 16:19:50 [INFO]: GET /api/genres?limit=200 - 304 (10ms)
+2026-10-30 16:19:50 [INFO]: GET /api/shelves?limit=200 - 304 (10ms)
+2026-10-30 16:19:50 [INFO]: GET /api/sagas?limit=200 - 304 (9ms)
+2026-10-30 16:19:50 [INFO]: GET /api/books?page=1&limit=10 - 304 (22ms)
+2026-10-30 16:19:50 [INFO]: GET /api/authors?limit=200 - 304 (12ms)
+2026-10-30 16:19:50 [INFO]: GET /api/genres?limit=200 - 304 (11ms)
+2026-10-30 16:19:50 [INFO]: GET /api/shelves?limit=200 - 304 (10ms)
+2026-10-30 16:19:50 [INFO]: GET /api/sagas?limit=200 - 304 (10ms)
+2026-10-30 16:19:50 [INFO]: GET /api/books?page=1&limit=10 - 304 (10ms)
+2026-10-30 16:20:42 [INFO]: GET /api/books?page=1&limit=10&search=harry - 200 (5ms)
+2026-10-30 16:20:44 [INFO]: GET /api/books?page=1&limit=10&search=harry - 304 (5ms)
+2026-10-30 16:20:46 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:46 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:20:47 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:47 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (2ms)
+2026-10-30 16:20:51 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:51 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:20:52 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:52 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:20:52 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:52 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (2ms)
+2026-10-30 16:20:53 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:53 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (2ms)
+2026-10-30 16:20:53 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:53 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:20:53 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:53 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (2ms)
+2026-10-30 16:20:53 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:53 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:20:53 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:53 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (2ms)
+2026-10-30 16:20:53 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:53 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:20:54 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:54 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:20:55 [WARN]: [Operational Error] GET /api/books - ID de autor inválido, ID de género inválido, ID de estante inválido, ID de saga inválido, Año inválido
+2026-10-30 16:20:55 [WARN]: GET /api/books?page=1&limit=10&search=&authorId=&genreId=&shelfId=&sagaId=&year= - 400 (1ms)
+2026-10-30 16:20:59 [INFO]: Login exitoso para usuario: admin
+2026-10-30 16:20:59 [INFO]: POST /api/auth/login - 200 (97ms)
+2026-10-30 16:21:03 [INFO]: GET /api/authors?page=1&limit=10 - 304 (3ms)
+2026-10-30 16:21:03 [INFO]: GET /api/authors?page=1&limit=10 - 304 (5ms)
+2026-10-30 16:21:07 [INFO]: GET /api/authors?page=1&limit=10 - 304 (4ms)
+2026-10-30 16:21:07 [INFO]: GET /api/authors?page=1&limit=10 - 304 (5ms)
+2026-10-30 16:21:13 [INFO]: GET /api/shelves?page=1&limit=10 - 200 (72ms)
+2026-10-30 16:21:13 [INFO]: GET /api/shelves?page=1&limit=10 - 304 (3ms)
+2026-10-30 16:21:17 [INFO]: GET /api/shelves?page=1&limit=10 - 304 (2ms)
+2026-10-30 16:21:17 [INFO]: GET /api/shelves?page=1&limit=10 - 304 (4ms)
+2026-10-30 16:21:21 [INFO]: GET /api/logs - 200 (82ms)
+2026-10-30 16:21:21 [INFO]: GET /api/logs - 304 (4ms)
+2026-10-30 16:59:25 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 16:59:25 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development

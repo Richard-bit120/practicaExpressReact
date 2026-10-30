@@ -1,0 +1,279 @@
+### Configuración de Variables Globales
+@baseUrl = http://localhost:3000/api
+@authToken = {{login.response.body.token}}
+
+### ==========================================
+### 1. MÓDULO DE AUTENTICACIÓN (AUTH)
+### ==========================================
+
+### Generar JWT con las credenciales del .env
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123!"
+}
+
+### ==========================================
+### CARGA MASIVA DE ESTANTERÍAS (20 REGISTROS)
+### ==========================================
+
+### Estantería 1: Ficción y Novelas
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0001",
+  "location": "Planta Baja - Sector A",
+  "description": "Estantería de Ficción y Novelas Contemporáneas"
+}
+
+###
+
+### Estantería 2: Ciencia Ficción
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0002",
+  "location": "Planta Baja - Sector B",
+  "description": "Estantería de Ciencia Ficción y Distopías"
+}
+
+###
+
+### Estantería 3: Literatura Clásica
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0003",
+  "location": "Planta Baja - Sector C",
+  "description": "Estantería de Clásicos Universales"
+}
+
+###
+
+### Estantería 4: Novedades
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0004",
+  "location": "Planta Baja - Central",
+  "description": "Estantería de Novedades y Bestsellers"
+}
+
+###
+
+### Estantería 5: Historia y Biografías
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0005",
+  "location": "Primer Piso - Sector A",
+  "description": "Estantería de Historia, Memorias y Biografías"
+}
+
+###
+
+### Estantería 6: Filosofía y Ensayo
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0006",
+  "location": "Primer Piso - Sector B",
+  "description": "Estantería de Filosofía y Ensayos Políticos"
+}
+
+###
+
+### Estantería 7: Arte y Fotografía
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0007",
+  "location": "Primer Piso - Sector C",
+  "description": "Estantería de Arte, Arquitectura y Fotografía"
+}
+
+###
+
+### Estantería 8: Ciencias Exactas y Tecnología
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0008",
+  "location": "Segundo Piso - Sala A",
+  "description": "Estantería de Ciencias Exactas, Programación e Ingeniería"
+}
+
+###
+
+### Estantería 9: Medicina y Salud
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0009",
+  "location": "Segundo Piso - Sector B",
+  "description": "Estantería de Medicina, Biología y Anatomía"
+}
+
+###
+
+### Estantería 10: Infantil
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0010",
+  "location": "Planta Baja - Sector Infantil",
+  "description": "Estantería de Cuentos Ilustrados e Infantiles"
+}
+
+###
+
+### Estantería 11: Juvenil y Cómics
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0011",
+  "location": "Planta Baja - Sector Juvenil",
+  "description": "Estantería de Literatura Juvenil, Manga y Cómics"
+}
+
+###
+
+### Estantería 12: Poesía y Teatro
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0012",
+  "location": "Primer Piso - Pasillo Central",
+  "description": "Estantería de Antologías Poéticas y Obras Dramáticas"
+}
+
+###
+
+### Estantería 13: Idiomas y Diccionarios
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0013",
+  "location": "Segundo Piso - Sector C",
+  "description": "Estantería de Idiomas, Lingüística y Diccionarios"
+}
+
+###
+
+### Estantería 14: Depósito / Reserva
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0014",
+  "location": "Depósito - Estante 1",
+  "description": "Estantería de Reserva y Colecciones Especiales"
+}
+
+###
+
+### Estantería 15: Policial y Novela Negra
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0015",
+  "location": "Planta Baja - Sector D",
+  "description": "Estantería de Suspenso, Policiales y Thrillers"
+}
+
+###
+
+### Estantería 16: Publicaciones Periódicas
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0016",
+  "location": "Planta Baja - Entrada",
+  "description": "Estantería de Revistas, Diarios y Publicaciones Periódicas"
+}
+
+###
+
+### Estantería 17: Psicología y Crecimiento Personal
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0017",
+  "location": "Primer Piso - Sector D",
+  "description": "Estantería de Psicología, Autoayuda y Desarrollo Personal"
+}
+
+###
+
+### Estantería 18: Archivo Histórico
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0018",
+  "location": "Segundo Piso - Archivo",
+  "description": "Estantería de Documentos Históricos y Mapas"
+}
+
+###
+
+### Estantería 19: Exposición del Mes
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0019",
+  "location": "Planta Baja - Exposición",
+  "description": "Estantería Temática Rotativa y Libros Recomendados"
+}
+
+###
+
+### Estantería 20: Ediciones Raras
+POST {{baseUrl}}/shelves/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "code": "0020",
+  "location": "Primer Piso - Sala VIP",
+  "description": "Estantería de Primeras Ediciones y Material de Consulta Limitada"
+}

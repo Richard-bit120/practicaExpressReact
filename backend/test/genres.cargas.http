@@ -1,0 +1,241 @@
+### ==========================================
+### CARGA MASIVA DE GÉNEROS (20 REGISTROS)
+### ==========================================
+
+### Género 1: Realismo Mágico
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Realismo Mágico",
+  "description": "Estilo literario donde se introducen elementos fantásticos o irrealistas como parte de la vida cotidiana."
+}
+
+###
+
+### Género 2: Ciencia Ficción
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Ciencia Ficción",
+  "description": "Ficción basada en especulaciones científicas o tecnológicas, viajes espaciales y futuros hipotéticos."
+}
+
+###
+
+### Género 3: Ensayo
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Ensayo",
+  "description": "Texto en prosa en el que un autor analiza, evalúa o reflexiona sobre un tema en particular."
+}
+
+###
+
+### Género 4: Novela Histórica
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Novela Histórica",
+  "description": "Obras narrativas cuya trama se desarrolla en un periodo o contexto histórico real del pasado."
+}
+
+###
+
+### Género 5: Dramaturgia
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Dramaturgia",
+  "description": "Obras escritas en formato de diálogo concebidas para ser representadas en un escenario teatral."
+}
+
+###
+
+### Género 6: Terror
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Terror",
+  "description": "Género enfocado en provocar miedo, inquietud, suspenso o sobrecogimiento en el lector."
+}
+
+###
+
+### Género 7: Policial y Novela Negra
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Policial y Novela Negra",
+  "description": "Historias centradas en la resolución de un crimen, investigaciones detectivescas y el submundo criminal."
+}
+
+###
+
+### Género 8: Fantasía Épica
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Fantasía Épica",
+  "description": "Narrativas ambientadas en mundos imaginarios complejos, con elementos mágicos y grandes batallas."
+}
+
+###
+
+### Género 9: Poesía
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Poesía",
+  "description": "Expresión artística a través de la palabra, estructurada en verso o prosa poética con fuerte ritmo y emoción."
+}
+
+###
+
+### Género 10: Romance
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Romance",
+  "description": "Obras enfocadas en las relaciones amorosas, pasionales y el desarrollo emocional de sus personajes."
+}
+
+###
+
+### Género 11: Distopía
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Distopía",
+  "description": "Ficción que representa sociedades futuras deshumanizadas, autoritarias o postapocalípticas."
+}
+
+###
+
+### Género 12: Suspenso / Thriller
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Suspenso",
+  "description": "Relatos caracterizados por mantener una alta tensión psicológica y un ritmo acelerado e impredecible."
+}
+
+###
+
+### Género 13: Biografía
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Biografía",
+  "description": "Narración detallada de la vida de una persona real escrita por un tercero."
+}
+
+###
+
+### Género 14: Cuento Corto
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Cuento Corto",
+  "description": "Narración breve de ficción con una trama concentrada y un número reducido de personajes."
+}
+
+###
+
+### Género 15: Filosofía
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Filosofía",
+  "description": "Textos dedicados al estudio de preguntas fundamentales sobre la existencia, el conocimiento y la ética."
+}
+
+###
+
+### Género 16: Aventura
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Aventura",
+  "description": "Historias llenas de acción, viajes, peligros y descubrimientos en entornos desconocidos."
+}
+
+###
+
+### Género 17: Novela Psicológica
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Novela Psicológica",
+  "description": "Obras centradas en los estados mentales, motivaciones internas y conflictos emocionales de los personajes."
+}
+
+###
+
+### Género 18: Ficción Contemporánea
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Ficción Contemporánea",
+  "description": "Relatos ambientados en el mundo actual que abordan dilemas y temáticas de la sociedad moderna."
+}
+
+###
+
+### Género 19: Mitología y Leyendas
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Mitología y Leyendas",
+  "description": "Compilaciones o relatos basados en tradiciones orales, deidades, héroes o folclore cultural."
+}
+
+###
+
+### Género 20: Autoayuda y Crecimiento Personal
+POST {{baseUrl}}/genres/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Crecimiento Personal",
+  "description": "Libros orientados a proporcionar herramientas para el desarrollo individual, la productividad y el bienestar."
+}

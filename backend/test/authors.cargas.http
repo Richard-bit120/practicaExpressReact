@@ -1,0 +1,259 @@
+### Configuración de Variables Globales
+@baseUrl = http://localhost:3000/api
+@authToken = {{login.response.body.token}}
+
+### ==========================================
+### 1. MÓDULO DE AUTENTICACIÓN (AUTH)
+### ==========================================
+
+### Generar JWT con las credenciales del .env
+# @name login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "Admin123!"
+}
+
+### ==========================================
+### CARGA MASIVA DE AUTORES (20 REGISTROS)
+### ==========================================
+
+### Autor 1: Isabel Allende
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Isabel Allende",
+  "biography": "Escritora chilena, autora de 'La casa de los espíritus', referente del realismo mágico."
+}
+
+###
+
+### Autor 2: Jorge Luis Borges
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Jorge Luis Borges",
+  "biography": "Poeta y ensayista argentino, clave en la literatura contemporánea y creador de 'Ficciones'."
+}
+
+###
+
+### Autor 3: Mario Vargas Llosa
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Mario Vargas Llosa",
+  "biography": "Escritor peruano, Premio Nobel de Literatura 2010 y autor de 'La ciudad y los perros'."
+}
+
+###
+
+### Autor 4: Julio Cortázar
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Julio Cortázar",
+  "biography": "Escritor e intérprete argentino, maestro del relato corto y autor de la célebre novela 'Rayuela'."
+}
+
+###
+
+### Autor 5: Octavio Paz
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Octavio Paz",
+  "biography": "Poeta y ensayista mexicano, Premio Nobel de Literatura en 1990 y autor de 'El laberinto de la soledad'."
+}
+
+###
+
+### Autor 6: Laura Esquivel
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Laura Esquivel",
+  "biography": "Escritora y política mexicana, mundialmente conocida por su obra 'Como agua para chocolate'."
+}
+
+###
+
+### Autor 7: Miguel de Cervantes
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Miguel de Cervantes",
+  "biography": "Novelista y poeta español del Siglo de Oro, creador de 'Don Quijote de la Mancha'."
+}
+
+###
+
+### Autor 8: Federico García Lorca
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Federico García Lorca",
+  "biography": "Poeta y dramaturgo español de la Generación del 27, autor de 'La casa de Bernarda Alba'."
+}
+
+###
+
+### Autor 9: Carlos Fuentes
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Carlos Fuentes",
+  "biography": "Escritor y diplomático mexicano, una de las grandes figuras del 'Boom' latinoamericano."
+}
+
+###
+
+### Autor 10: Jane Austen
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Jane Austen",
+  "biography": "Novelista británica del siglo XIX, célebre por clásicos como 'Orgullo y prejuicio' y 'Emma'."
+}
+
+###
+
+### Autor 11: George Orwell
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "George Orwell",
+  "biography": "Novelist y ensayista británico, famoso por sus obras distópicas '1984' y 'Rebelión en la granja'."
+}
+
+###
+
+### Autor 12: Stephen King
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Stephen King",
+  "biography": "Escritor estadounidense de literatura de terror, ficción sobrenatural y misterio."
+}
+
+###
+
+### Autor 13: Agatha Christie
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Agatha Christie",
+  "biography": "Escritora británica de novelas policíacas y creadora de personajes emblemáticos como Hércules Poirot."
+}
+
+###
+
+### Autor 14: J.K. Rowling
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "J.K. Rowling",
+  "biography": "Autora británica reconocida por ser la creadora de la famosa saga fantástica 'Harry Potter'."
+}
+
+###
+
+### Autor 15: Franz Kafka
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Franz Kafka",
+  "biography": "Escritor bohemio en lengua alemana cuya obra explora la alienación y el absurdo, autor de 'La metamorfosis'."
+}
+
+###
+
+### Autor 16: Ernest Hemingway
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Ernest Hemingway",
+  "biography": "Escritor y periodista estadounidense, Premio Nobel de Literatura en 1954 y autor de 'El viejo y el mar'."
+}
+
+###
+
+### Autor 17: Edgar Allan Poe
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Edgar Allan Poe",
+  "biography": "Escritor, poeta y crítico estadounidense, maestro del relato corto de terror y del género detectivesco."
+}
+
+###
+
+### Autor 18: Virginia Woolf
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Virginia Woolf",
+  "biography": "Escritora británica, figura destacada del modernismo vanguardista del siglo XX y autora de 'Al faro'."
+}
+
+###
+
+### Autor 19: Oscar Wilde
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Oscar Wilde",
+  "biography": "Dramaturgo y poeta irlandés, famoso por sus ingeniosas obras de teatro y su novela 'El retrato de Dorian Gray'."
+}
+
+###
+
+### Autor 20: Pablo Neruda
+POST {{baseUrl}}/authors/
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+  "name": "Pablo Neruda",
+  "biography": "Poeta chileno galardonado con el Premio Nobel de Literatura en 1971, autor de 'Veinte poemas de amor y una canción desesperada'."
+}
