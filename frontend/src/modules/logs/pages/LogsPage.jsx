@@ -5,6 +5,7 @@ import { EmptyState } from '../../../shared/components/feedback/EmptyState';
 import { PageHeader } from '../../../shared/components/layout/PageHeader';
 import { SelectField } from '../../../shared/components/forms/SelectField';
 import { InputText } from '../../../shared/components/forms/InputText';
+import { Button } from '../../../shared/components/ui/Button';
 
 const LOG_LEVELS = [
   { value: '', label: 'Todos los niveles' },
@@ -30,9 +31,9 @@ export const LogsPage = () => {
         title="Logs del sistema"
         subtitle="Registro de eventos, peticiones y errores"
         action={
-          <button onClick={refetch} className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700">
+          <Button variant="primary" onClick={refetch}>
             🔄 Actualizar
-          </button>
+          </Button>
         }
       />
 

@@ -1,6 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { SelectField } from "../../../shared/components/forms/SelectField";
 import { InputText } from "../../../shared/components/forms/InputText";
+import { Button } from "../../../shared/components/ui/Button"; // Importamos el componente Button
 
 export const BookFilters = ({
   authors,
@@ -129,19 +130,15 @@ export const BookFilters = ({
         </div>
       </div>
       <div className="flex space-x-3 mt-4">
-        <button
-          type="submit"
-          className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
-        >
+        
+        <Button type="submit" variant="primary">
           Aplicar filtros
-        </button>
-        <button
-          type="button"
-          onClick={handleClear}
-          className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200"
-        >
+        </Button>
+        
+        <Button type="button" variant="secondary" onClick={handleClear}>
           Limpiar filtros
-        </button>
+        </Button>
+
       </div>
     </form>
   );

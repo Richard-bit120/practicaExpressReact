@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { bookService } from "../services/book.service";
 import { bookValidationSchema } from "../validations/book.validation";
 import { FormField } from "../../../shared/components/forms/FormField";
@@ -9,6 +9,7 @@ import { LoadingSpinner } from "../../../shared/components/feedback/LoadingSpinn
 import { ErrorMessage } from "../../../shared/components/feedback/ErrorMessage";
 import { SuccessMessage } from "../../../shared/components/feedback/SuccessMessage";
 import { PageHeader } from "../../../shared/components/layout/PageHeader";
+import { Button } from "../../../shared/components/ui/Button";
 import { MESSAGES } from "../../../shared/constants/messages";
 import api from "../../../shared/services/api";
 
@@ -161,12 +162,12 @@ export const BookFormPage = () => {
             : "Complete los datos para agregar un nuevo libro"
         }
         action={
-          <Link
-            to="/books"
-            className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200"
+          <Button 
+            variant="secondary" 
+            onClick={() => navigate("/books")}
           >
             ← Volver al listado
-          </Link>
+          </Button>
         }
       />
 
@@ -294,23 +295,24 @@ export const BookFormPage = () => {
           </FormField>
 
           <div className="flex space-x-3 mt-6">
-            <button
+            <Button
               type="submit"
+              variant="primary"
               disabled={loading}
-              className="px-6 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 disabled:opacity-50"
             >
               {loading
                 ? "Guardando..."
                 : isEditing
                   ? "Actualizar libro"
                   : "Crear libro"}
-            </button>
-            <Link
-              to="/books"
-              className="px-6 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200"
+            </Button>
+            <Button
+              type="button"
+              variant="secondary"
+              onClick={() => navigate("/books")}
             >
               Cancelar
-            </Link>
+            </Button>
           </div>
         </form>
       </div>

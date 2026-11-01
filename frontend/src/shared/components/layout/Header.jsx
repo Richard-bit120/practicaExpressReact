@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { STORAGE_KEYS } from "../../constants/storage";
+import { Button } from "../../../shared/components/ui/Button";
 
 export const Header = () => {
   const navigate = useNavigate();
@@ -19,12 +20,12 @@ export const Header = () => {
           {user.username || "Admin"}
         </p>
       </div>
-      <button
+      <Button
+        variant="secondary"
         onClick={handleLogout}
-        className="px-4 py-2 text-sm font-medium text-red-600 border border-red-200 rounded-md hover:bg-red-50 transition-colors"
       >
         Cerrar sesión
-      </button>
+      </Button>
     </header>
   );
 };

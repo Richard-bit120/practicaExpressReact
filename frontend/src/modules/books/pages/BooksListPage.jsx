@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Añadimos useNavigate
 import { useBooks } from "../hooks/useBooks";
 import { BookFilters } from "../components/BookFilters";
 import { DataTable } from "../../../shared/components/tables/DataTable";
@@ -10,11 +10,13 @@ import { EmptyState } from "../../../shared/components/feedback/EmptyState";
 import { SuccessMessage } from "../../../shared/components/feedback/SuccessMessage";
 import { ConfirmModal } from "../../../shared/components/modals/ConfirmModal";
 import { PageHeader } from "../../../shared/components/layout/PageHeader";
+import { Button } from "../../../shared/components/ui/Button"; // 1. Importamos el Button
 import { ROUTES } from "../../../shared/constants/routes";
 import { MESSAGES } from "../../../shared/constants/messages";
 import api from "../../../shared/services/api";
 
 export const BooksListPage = () => {
+  const navigate = useNavigate(); // Para usar botones en lugar de Links en las acciones
   const {
     data: books,
     meta,
@@ -36,7 +38,6 @@ export const BooksListPage = () => {
   const [deleteModal, setDeleteModal] = useState({ isOpen: false, book: null });
   const [deleteLoading, setDeleteLoading] = useState(false);
 
-  // Cargar opciones para filtros
   useEffect(() => {
     const loadFilterOptions = async () => {
       try {
@@ -53,7 +54,7 @@ export const BooksListPage = () => {
         setShelves(shelvesRes.data.data);
         setSagas(sagasRes.data.data);
       } catch (err) {
-        // Silencioso: los filtros simplemente no se mostrarán
+        // Silencioso
       }
     };
     loadFilterOptions();
@@ -99,47 +100,33 @@ export const BooksListPage = () => {
         </Link>
       ),
     },
-    {
-      key: "author",
-      header: "Autor",
-      render: (book) => book.author?.name || "-",
-    },
-    {
-      key: "genre",
-      header: "Género",
-      render: (book) => book.genre?.name || "-",
-    },
+    { key: "author", header: "Autor", render: (book) => book.author?.name || "-" },
+    { key: "genre", header: "Género", render: (book) => book.genre?.name || "-" },
     { key: "year", header: "Año", render: (book) => book.year || "-" },
-    {
-      key: "saga",
-      header: "Saga",
-      render: (book) => book.saga?.name || "Sin saga",
-    },
-    {
-      key: "shelf",
-      header: "Estante",
-      render: (book) => book.shelf?.code || "-",
-    },
+    { key: "saga", header: "Saga", render: (book) => book.saga?.name || "Sin saga" },
+    { key: "shelf", header: "Estante", render: (book) => book.shelf?.code || "-" },
     {
       key: "actions",
       header: "Acciones",
       render: (book) => (
         <div className="flex space-x-2">
-          <Link
-            to={`/books/${book.id}/edit`}
-            className="text-sm text-blue-600 hover:underline"
+          {/* 2. Convertimos las acciones de la tabla a componentes Button uniformes */}
+          <Button 
+            variant="outline" 
+            onClick={() => navigate(`/books/${book.id}/edit`)}
           >
             Editar
-          </Link>
-          <button
+          </Button>
+          
+          <Button
+            variant="danger"
             onClick={(e) => {
               e.stopPropagation();
               handleDeleteClick(book);
             }}
-            className="text-sm text-red-600 hover:underline"
           >
             Eliminar
-          </button>
+          </Button>
         </div>
       ),
     },
@@ -151,12 +138,12 @@ export const BooksListPage = () => {
         title="Libros"
         subtitle="Gestión del catálogo de libros"
         action={
-          <Link
-            to={ROUTES.BOOK_CREATE}
-            className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
+          <Button 
+            variant="primary" 
+            onClick={() => navigate(ROUTES.BOOK_CREATE)}
           >
             + Nuevo libro
-          </Link>
+          </Button>
         }
       />
 
@@ -179,12 +166,9 @@ export const BooksListPage = () => {
           title="No hay libros"
           message="No se encontraron libros con los filtros aplicados."
           action={
-            <Link
-              to={ROUTES.BOOK_CREATE}
-              className="text-sm text-blue-600 hover:underline"
-            >
+            <Button variant="outline" onClick={() => navigate(ROUTES.BOOK_CREATE)}>
               Agregar primer libro
-            </Link>
+            </Button>
           }
         />
       ) : (

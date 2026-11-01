@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSagas } from "../hooks/useSagas";
 import { DataTable } from "../../../shared/components/tables/DataTable";
 import { Pagination } from "../../../shared/components/tables/Pagination";
@@ -10,8 +10,10 @@ import { SuccessMessage } from "../../../shared/components/feedback/SuccessMessa
 import { ConfirmModal } from "../../../shared/components/modals/ConfirmModal";
 import { PageHeader } from "../../../shared/components/layout/PageHeader";
 import { InputText } from "../../../shared/components/forms/InputText";
+import { Button } from "../../../shared/components/ui/Button";
 
 export const SagasListPage = () => {
+  const navigate = useNavigate();
   const {
     data: sagas,
     meta,
@@ -24,6 +26,7 @@ export const SagasListPage = () => {
     updateParams,
     clearMessages,
   } = useSagas();
+
   const [search, setSearch] = useState("");
   const [deleteModal, setDeleteModal] = useState({ isOpen: false, saga: null });
   const [deleteLoading, setDeleteLoading] = useState(false);
@@ -57,21 +60,21 @@ export const SagasListPage = () => {
       header: "Acciones",
       render: (saga) => (
         <div className="flex space-x-2">
-          <Link
-            to={`/sagas/${saga.id}/edit`}
-            className="text-sm text-blue-600 hover:underline"
+          <Button
+            variant="outline"
+            onClick={() => navigate(`/sagas/${saga.id}/edit`)}
           >
             Editar
-          </Link>
-          <button
+          </Button>
+          <Button
+            variant="danger"
             onClick={(e) => {
               e.stopPropagation();
               setDeleteModal({ isOpen: true, saga });
             }}
-            className="text-sm text-red-600 hover:underline"
           >
             Eliminar
-          </button>
+          </Button>
         </div>
       ),
     },
@@ -83,18 +86,17 @@ export const SagasListPage = () => {
         title="Sagas"
         subtitle="Gestión de sagas literarias"
         action={
-          <Link
-            to="/sagas/create"
-            className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
-          >
+          <Button variant="primary" onClick={() => navigate("/sagas/create")}>
             + Nueva saga
-          </Link>
+          </Button>
         }
       />
+
       {successMessage && <SuccessMessage message={successMessage} />}
       {error && <ErrorMessage message={error} onRetry={clearMessages} />}
-      <form onSubmit={handleSearch} className="mb-4 flex space-x-2">
-        <div className="w-64">
+
+      <form onSubmit={handleSearch} className="mb-4 flex items-center gap-2">
+        <div className="w-64 flex">
           <InputText
             name="search"
             value={search}
@@ -102,13 +104,16 @@ export const SagasListPage = () => {
             placeholder="Buscar saga..."
           />
         </div>
-        <button
+
+        <Button
           type="submit"
-          className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
+          variant="primary"
+          className="px-4 shrink-0"
         >
           Buscar
-        </button>
+        </Button>
       </form>
+
       {loading ? (
         <LoadingSpinner text="Cargando sagas..." />
       ) : sagas.length === 0 ? (
@@ -125,6 +130,7 @@ export const SagasListPage = () => {
           )}
         </>
       )}
+
       <ConfirmModal
         isOpen={deleteModal.isOpen}
         title="Eliminar saga"

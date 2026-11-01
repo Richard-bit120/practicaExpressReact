@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useGenres } from "../hooks/useGenres";
 import { DataTable } from "../../../shared/components/tables/DataTable";
 import { Pagination } from "../../../shared/components/tables/Pagination";
@@ -10,8 +10,10 @@ import { SuccessMessage } from "../../../shared/components/feedback/SuccessMessa
 import { ConfirmModal } from "../../../shared/components/modals/ConfirmModal";
 import { PageHeader } from "../../../shared/components/layout/PageHeader";
 import { InputText } from "../../../shared/components/forms/InputText";
+import { Button } from "../../../shared/components/ui/Button";
 
 export const GenresListPage = () => {
+  const navigate = useNavigate();
   const {
     data: genres,
     meta,
@@ -24,6 +26,7 @@ export const GenresListPage = () => {
     updateParams,
     clearMessages,
   } = useGenres();
+
   const [search, setSearch] = useState("");
   const [deleteModal, setDeleteModal] = useState({
     isOpen: false,
@@ -60,21 +63,21 @@ export const GenresListPage = () => {
       header: "Acciones",
       render: (genre) => (
         <div className="flex space-x-2">
-          <Link
-            to={`/genres/${genre.id}/edit`}
-            className="text-sm text-blue-600 hover:underline"
+          <Button
+            variant="outline"
+            onClick={() => navigate(`/genres/${genre.id}/edit`)}
           >
             Editar
-          </Link>
-          <button
+          </Button>
+          <Button
+            variant="danger"
             onClick={(e) => {
               e.stopPropagation();
               setDeleteModal({ isOpen: true, genre });
             }}
-            className="text-sm text-red-600 hover:underline"
           >
             Eliminar
-          </button>
+          </Button>
         </div>
       ),
     },
@@ -86,17 +89,19 @@ export const GenresListPage = () => {
         title="Géneros"
         subtitle="Gestión de géneros literarios"
         action={
-          <Link
-            to="/genres/create"
-            className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
-          >
+          <Button variant="primary" onClick={() => navigate("/genres/create")}>
             + Nuevo género
-          </Link>
+          </Button>
         }
       />
+
       {successMessage && <SuccessMessage message={successMessage} />}
       {error && <ErrorMessage message={error} onRetry={clearMessages} />}
-      <form onSubmit={handleSearch} className="mb-4 flex space-x-2">
+
+      <form
+        onSubmit={handleSearch}
+        className="mb-4 flex space-x-2 items-center"
+      >
         <div className="w-64">
           <InputText
             name="search"
@@ -105,13 +110,11 @@ export const GenresListPage = () => {
             placeholder="Buscar género..."
           />
         </div>
-        <button
-          type="submit"
-          className="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700"
-        >
+        <Button type="submit" variant="primary" className="h-[38px] shrink-0">
           Buscar
-        </button>
+        </Button>
       </form>
+
       {loading ? (
         <LoadingSpinner text="Cargando géneros..." />
       ) : genres.length === 0 ? (
@@ -131,6 +134,7 @@ export const GenresListPage = () => {
           )}
         </>
       )}
+
       <ConfirmModal
         isOpen={deleteModal.isOpen}
         title="Eliminar género"

@@ -1,3 +1,5 @@
+import { Button } from '../ui/Button'; // Verifica que la ruta sea correcta
+
 export const Pagination = ({ meta, onPageChange, onLimitChange }) => {
   if (!meta || meta.totalPages <= 1) return null;
 
@@ -21,23 +23,28 @@ export const Pagination = ({ meta, onPageChange, onLimitChange }) => {
             </option>
           ))}
         </select>
-        <button
+        
+        <Button
+          variant="outline"
+          size="sm"
           onClick={() => onPageChange(page - 1)}
           disabled={page <= 1}
-          className="px-3 py-1 text-sm border border-gray-300 rounded-md disabled:opacity-50 hover:bg-gray-50"
         >
           ← Anterior
-        </button>
+        </Button>
+
         <span className="text-sm text-gray-600">
           Página {page} de {totalPages}
         </span>
-        <button
+
+        <Button
+          variant="outline"
+          size="sm"
           onClick={() => onPageChange(page + 1)}
           disabled={page >= totalPages}
-          className="px-3 py-1 text-sm border border-gray-300 rounded-md disabled:opacity-50 hover:bg-gray-50"
         >
           Siguiente →
-        </button>
+        </Button>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import { useAuth } from "../hooks/useAuth";
 import { loginValidationSchema } from "../validations/login.validation";
 import { FormField } from "../../../shared/components/forms/FormField";
 import { InputText } from "../../../shared/components/forms/InputText";
+import { Button } from "../../../shared/components/ui/Button";
 
 export const LoginPage = () => {
   const { login, loading, error, setError } = useAuth();
@@ -101,13 +102,14 @@ export const LoginPage = () => {
               />
             </FormField>
 
-            <button
+            <Button
               type="submit"
+              variant="primary"
               disabled={loading}
-              className="w-full py-2.5 px-4 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-6"
+              className="w-full mt-6"
             >
               {loading ? "Iniciando sesión..." : "Iniciar sesión"}
-            </button>
+            </Button>
           </form>
         </div>
 

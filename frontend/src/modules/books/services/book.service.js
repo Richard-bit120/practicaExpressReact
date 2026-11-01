@@ -3,7 +3,13 @@ import { ENDPOINTS } from '../../../shared/constants/endpoints';
 
 export const bookService = {
     async list(params = {}) {
-        return api.get(ENDPOINTS.BOOKS.LIST, { params });
+        // 1. Filtramos los parámetros para eliminar strings vacíos y valores nulos
+        const parametrosLimpios = Object.fromEntries(
+            Object.entries(params).filter(([_, valor]) => valor !== '' && valor != null)
+        );
+
+        // 2. Enviamos el objeto ya limpio
+        return api.get(ENDPOINTS.BOOKS.LIST, { params: parametrosLimpios });
     },
 
     async getById(id) {

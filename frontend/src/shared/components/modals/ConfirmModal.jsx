@@ -1,3 +1,5 @@
+import { Button } from '../ui/Button'; // Verifica que esta ruta apunte correctamente a donde creaste Button.jsx
+
 export const ConfirmModal = ({
   isOpen,
   title,
@@ -19,20 +21,25 @@ export const ConfirmModal = ({
           <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
           <p className="mt-2 text-sm text-gray-600">{message}</p>
           <div className="mt-6 flex justify-end space-x-3">
-            <button
+            
+            {/* Botón de Cancelar: Usamos la variante 'secondary' */}
+            <Button
+              variant="secondary"
               onClick={onCancel}
-              className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-md hover:bg-gray-200"
               disabled={loading}
             >
               Cancelar
-            </button>
-            <button
+            </Button>
+
+            {/* Botón de Confirmar/Eliminar: Usamos 'danger' y aprovechamos la prop isLoading */}
+            <Button
+              variant="danger"
               onClick={onConfirm}
-              className="px-4 py-2 text-sm font-medium text-white bg-red-600 rounded-md hover:bg-red-700 disabled:opacity-50"
-              disabled={loading}
+              isLoading={loading}
             >
-              {loading ? "Eliminando..." : "Eliminar"}
-            </button>
+              Eliminar
+            </Button>
+
           </div>
         </div>
       </div>
