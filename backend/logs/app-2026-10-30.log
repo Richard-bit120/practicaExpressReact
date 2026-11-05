@@ -398,3 +398,7 @@
 2026-10-30 16:21:21 [INFO]: GET /api/logs - 304 (4ms)
 2026-10-30 16:59:25 [INFO]: ✅ Conexión a MySQL establecida correctamente.
 2026-10-30 16:59:25 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 18:44:03 [INFO]: ✅ Conexión a MySQL establecida correctamente.
+2026-10-30 18:44:03 [INFO]: 🚀 Servidor corriendo en puerto 3000 en modo development
+2026-10-30 18:50:59 [INFO]: GET /api/dashboard/stats - 304 (178ms)
+2026-10-30 18:50:59 [INFO]: GET /api/dashboard/stats - 304 (15ms)

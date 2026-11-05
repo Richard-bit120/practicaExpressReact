@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Añadimos useNavigate
+import { Link, useNavigate } from "react-router-dom";
 import { useBooks } from "../hooks/useBooks";
 import { BookFilters } from "../components/BookFilters";
 import { DataTable } from "../../../shared/components/tables/DataTable";
@@ -10,13 +10,12 @@ import { EmptyState } from "../../../shared/components/feedback/EmptyState";
 import { SuccessMessage } from "../../../shared/components/feedback/SuccessMessage";
 import { ConfirmModal } from "../../../shared/components/modals/ConfirmModal";
 import { PageHeader } from "../../../shared/components/layout/PageHeader";
-import { Button } from "../../../shared/components/ui/Button"; // 1. Importamos el Button
+import { Button } from "../../../shared/components/ui/Button";
 import { ROUTES } from "../../../shared/constants/routes";
-import { MESSAGES } from "../../../shared/constants/messages";
 import api from "../../../shared/services/api";
 
 export const BooksListPage = () => {
-  const navigate = useNavigate(); // Para usar botones en lugar de Links en las acciones
+  const navigate = useNavigate();
   const {
     data: books,
     meta,
@@ -41,20 +40,18 @@ export const BooksListPage = () => {
   useEffect(() => {
     const loadFilterOptions = async () => {
       try {
-        const [authorsRes, genresRes, shelvesRes, sagasRes] = await Promise.all(
-          [
-            api.get("/authors", { params: { limit: 200 } }),
-            api.get("/genres", { params: { limit: 200 } }),
-            api.get("/shelves", { params: { limit: 200 } }),
-            api.get("/sagas", { params: { limit: 200 } }),
-          ],
-        );
+        const [authorsRes, genresRes, shelvesRes, sagasRes] = await Promise.all([
+          api.get("/authors", { params: { limit: 200 } }),
+          api.get("/genres", { params: { limit: 200 } }),
+          api.get("/shelves", { params: { limit: 200 } }),
+          api.get("/sagas", { params: { limit: 200 } }),
+        ]);
         setAuthors(authorsRes.data.data);
         setGenres(genresRes.data.data);
         setShelves(shelvesRes.data.data);
         setSagas(sagasRes.data.data);
       } catch (err) {
-        // Silencioso
+        console.error("Error al cargar opciones de filtros:", err);
       }
     };
     loadFilterOptions();
@@ -110,7 +107,6 @@ export const BooksListPage = () => {
       header: "Acciones",
       render: (book) => (
         <div className="flex space-x-2">
-          {/* 2. Convertimos las acciones de la tabla a componentes Button uniformes */}
           <Button 
             variant="outline" 
             onClick={() => navigate(`/books/${book.id}/edit`)}
@@ -151,10 +147,12 @@ export const BooksListPage = () => {
       {error && <ErrorMessage message={error} onRetry={clearMessages} />}
 
       <BookFilters
+        books={books}
         authors={authors}
         genres={genres}
         shelves={shelves}
         sagas={sagas}
+        initialFilters={params}
         onFilter={handleFilter}
         onClear={handleClearFilters}
       />

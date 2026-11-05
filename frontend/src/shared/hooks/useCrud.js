@@ -36,7 +36,7 @@ export const useCrud = (service, options = {}) => {
         if (autoFetch) {
             fetchData();
         }
-    }, [params]); // eslint-disable-line react-hooks/exhaustive-deps
+    }, [params]);
 
     const create = useCallback(async (dto) => {
         setLoading(true);
