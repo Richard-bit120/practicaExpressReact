@@ -22,6 +22,23 @@ const levelBadgeColors = {
   DEBUG: 'bg-gray-100 text-gray-800',
 };
 
+// Función para formatear la fecha UTC a la hora local
+const formatLogDate = (dateString) => {
+  if (!dateString) return '-';
+  const date = new Date(dateString);
+  if (isNaN(date.getTime())) return dateString;
+
+  return date.toLocaleString('es-AR', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  });
+};
+
 export const LogsPage = () => {
   const { logs, loading, error, filters, updateFilters, refetch } = useLogs();
 
@@ -91,7 +108,7 @@ export const LogsPage = () => {
               {logs.map((log, idx) => (
                 <tr key={log.id || idx} className="hover:bg-gray-50">
                   <td className="px-6 py-3 whitespace-nowrap text-sm text-gray-500">
-                    {log.timestamp || log.createdAt || '-'}
+                    {formatLogDate(log.timestamp || log.createdAt)}
                   </td>
                   <td className="px-6 py-3 whitespace-nowrap">
                     <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full ${levelBadgeColors[log.level] || 'bg-gray-100 text-gray-800'}`}>
